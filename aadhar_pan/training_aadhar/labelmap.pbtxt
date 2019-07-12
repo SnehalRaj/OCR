@@ -1,0 +1,31 @@
+item {
+  id: 1
+  name: 'Aadhar'
+}
+
+item {
+  id: 2
+  name: 'AadharNo.'
+}
+
+item {
+  id: 3
+  name: 'PAN'
+}
+
+item {
+  id: 4
+  name: 'PANNo.'
+}
+item {
+  id: 5
+  name:'gstin'
+}
+item {
+  id: 6
+  name:'reg'
+}
+item {
+ id: 7
+ name:'n'
+}

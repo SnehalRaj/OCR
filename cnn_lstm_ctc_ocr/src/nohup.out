@@ -1,0 +1,945 @@
+/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/dask/config.py:168: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  data = yaml.load(f.read()) or {}
+WARNING: Logging before flag parsing goes to stderr.
+W0703 14:49:03.407083 139924911310592 deprecation_wrapper.py:119] From train.py:83: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0703 14:49:03.407303 139924911310592 deprecation_wrapper.py:119] From train.py:83: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0703 14:49:03.407417 139924911310592 deprecation_wrapper.py:119] From train.py:181: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+W0703 14:49:03.407855 139924911310592 deprecation_wrapper.py:119] From train.py:148: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+W0703 14:49:03.407985 139924911310592 deprecation_wrapper.py:119] From train.py:149: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+I0703 14:49:03.408567 139924911310592 estimator.py:209] Using config: {'_save_checkpoints_secs': 120, '_session_config': gpu_options {
+  per_process_gpu_memory_fraction: 0.95
+}
+, '_keep_checkpoint_max': 5, '_task_type': 'worker', '_train_distribute': None, '_is_chief': True, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f426ea4db10>, '_model_dir': '../data/model', '_protocol': None, '_save_checkpoints_steps': None, '_keep_checkpoint_every_n_hours': 10000, '_service': None, '_num_ps_replicas': 0, '_tf_random_seed': None, '_save_summary_steps': 100, '_device_fn': None, '_experimental_distribute': None, '_num_worker_replicas': 1, '_task_id': 0, '_log_step_count_steps': 100, '_experimental_max_worker_delay_secs': None, '_evaluation_master': '', '_eval_distribute': None, '_global_id_in_cluster': 0, '_master': ''}
+W0703 14:49:03.418634 139924911310592 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/training_util.py:236: initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0703 14:49:03.429249 139924911310592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/mjsynth.py:127: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+W0703 14:49:03.461260 139924911310592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/mjsynth.py:69: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W0703 14:49:03.461419 139924911310592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/mjsynth.py:71: The name tf.VarLenFeature is deprecated. Please use tf.io.VarLenFeature instead.
+
+W0703 14:49:03.461553 139924911310592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/mjsynth.py:82: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W0703 14:49:03.490019 139924911310592 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/pipeline.py:101: bucket_by_sequence_length (from tensorflow.contrib.data.python.ops.grouping) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.bucket_by_sequence_length(...)`.
+W0703 14:49:03.497045 139924911310592 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/data/experimental/ops/grouping.py:193: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+I0703 14:49:03.558463 139924911310592 estimator.py:1145] Calling model_fn.
+W0703 14:49:03.558954 139924911310592 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:59: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+W0703 14:49:03.892585 139924911310592 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:82: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+W0703 14:49:03.974162 139924911310592 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:73: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+W0703 14:49:04.295949 139924911310592 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:167: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+W0703 14:49:04.296319 139924911310592 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+W0703 14:49:04.369127 139924911310592 deprecation.py:506] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/ops/init_ops.py:1251: calling __init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0703 14:49:04.909780 139924911310592 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:196: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+W0703 14:49:05.335150 139924911310592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:203: The name tf.nn.ctc_loss is deprecated. Please use tf.compat.v1.nn.ctc_loss instead.
+
+W0703 14:49:05.337400 139924911310592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model_fn.py:86: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+W0703 14:49:05.337532 139924911310592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model_fn.py:88: The name tf.train.get_global_step is deprecated. Please use tf.compat.v1.train.get_global_step instead.
+
+W0703 14:49:05.341767 139924911310592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model_fn.py:94: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0703 14:49:07.484105 139924911310592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model_fn.py:105: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+W0703 14:49:07.485490 139924911310592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model_fn.py:286: The name tf.train.Scaffold is deprecated. Please use tf.compat.v1.train.Scaffold instead.
+
+I0703 14:49:07.485692 139924911310592 estimator.py:1147] Done calling model_fn.
+I0703 14:49:07.486974 139924911310592 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+I0703 14:49:08.240000 139924911310592 monitored_session.py:240] Graph was finalized.
+2019-07-03 14:49:08.240305: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-07-03 14:49:08.247564: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2019-07-03 14:49:08.319907: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-07-03 14:49:08.320721: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5562ac2b4d50 executing computations on platform CUDA. Devices:
+2019-07-03 14:49:08.320748: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-07-03 14:49:08.323320: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300080000 Hz
+2019-07-03 14:49:08.323944: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5562ac72c2c0 executing computations on platform Host. Devices:
+2019-07-03 14:49:08.323965: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2019-07-03 14:49:08.324118: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-07-03 14:49:08.324827: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.562
+pciBusID: 0000:00:1e.0
+2019-07-03 14:49:08.324988: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcudart.so.10.0'; dlerror: libcudart.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-07-03 14:49:08.325073: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcublas.so.10.0'; dlerror: libcublas.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-07-03 14:49:08.325149: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcufft.so.10.0'; dlerror: libcufft.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-07-03 14:49:08.325223: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcurand.so.10.0'; dlerror: libcurand.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-07-03 14:49:08.325297: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcusolver.so.10.0'; dlerror: libcusolver.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-07-03 14:49:08.325368: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcusparse.so.10.0'; dlerror: libcusparse.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-07-03 14:49:08.327870: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2019-07-03 14:49:08.327892: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1663] Cannot dlopen some GPU libraries. Skipping registering GPU devices...
+2019-07-03 14:49:08.327909: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-07-03 14:49:08.327917: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2019-07-03 14:49:08.327924: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+W0703 14:49:08.328828 139924911310592 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+I0703 14:49:08.330566 139924911310592 saver.py:1280] Restoring parameters from ../data/model/model.ckpt-322
+2019-07-03 14:49:08.588313: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+W0703 14:49:08.708139 139924911310592 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1066: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+I0703 14:49:08.890682 139924911310592 session_manager.py:500] Running local_init_op.
+I0703 14:49:08.932841 139924911310592 session_manager.py:502] Done running local_init_op.
+I0703 14:49:11.008718 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 322 into ../data/model/model.ckpt.
+I0703 14:49:20.490984 139924911310592 basic_session_run_hooks.py:262] loss = 44.432037, step = 323
+I0703 14:51:15.250111 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 343 into ../data/model/model.ckpt.
+W0703 14:51:15.404972 139924911310592 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+I0703 14:53:19.264836 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 365 into ../data/model/model.ckpt.
+I0703 14:55:28.339440 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 388 into ../data/model/model.ckpt.
+I0703 14:57:33.973268 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 411 into ../data/model/model.ckpt.
+I0703 14:58:40.435678 139924911310592 basic_session_run_hooks.py:692] global_step/sec: 0.178589
+I0703 14:58:40.436417 139924911310592 basic_session_run_hooks.py:260] loss = 41.528446, step = 423 (559.946 sec)
+I0703 14:59:37.152973 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 433 into ../data/model/model.ckpt.
+I0703 15:01:37.828505 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 455 into ../data/model/model.ckpt.
+I0703 15:03:41.342048 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 477 into ../data/model/model.ckpt.
+I0703 15:05:42.011219 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 498 into ../data/model/model.ckpt.
+I0703 15:07:47.042922 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 521 into ../data/model/model.ckpt.
+I0703 15:07:59.644956 139924911310592 basic_session_run_hooks.py:692] global_step/sec: 0.178824
+I0703 15:07:59.645746 139924911310592 basic_session_run_hooks.py:260] loss = 38.864426, step = 523 (559.209 sec)
+I0703 15:09:48.405719 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 543 into ../data/model/model.ckpt.
+I0703 15:11:52.821541 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 566 into ../data/model/model.ckpt.
+I0703 15:13:57.540790 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 589 into ../data/model/model.ckpt.
+I0703 15:15:58.539071 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 611 into ../data/model/model.ckpt.
+I0703 15:17:10.976663 139924911310592 basic_session_run_hooks.py:692] global_step/sec: 0.181379
+I0703 15:17:10.977444 139924911310592 basic_session_run_hooks.py:260] loss = 34.426735, step = 623 (551.332 sec)
+I0703 15:18:03.310328 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 633 into ../data/model/model.ckpt.
+I0703 15:20:05.328250 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 654 into ../data/model/model.ckpt.
+I0703 15:22:07.838422 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 676 into ../data/model/model.ckpt.
+I0703 15:24:08.505136 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 698 into ../data/model/model.ckpt.
+I0703 15:26:10.027432 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 721 into ../data/model/model.ckpt.
+I0703 15:26:21.135885 139924911310592 basic_session_run_hooks.py:692] global_step/sec: 0.181766
+I0703 15:26:21.136616 139924911310592 basic_session_run_hooks.py:260] loss = 25.010399, step = 723 (550.159 sec)
+I0703 15:28:10.788667 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 743 into ../data/model/model.ckpt.
+I0703 15:30:14.522056 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 765 into ../data/model/model.ckpt.
+I0703 15:32:15.704322 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 786 into ../data/model/model.ckpt.
+I0703 15:34:18.269572 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 807 into ../data/model/model.ckpt.
+I0703 15:35:45.263123 139924911310592 basic_session_run_hooks.py:692] global_step/sec: 0.177265
+I0703 15:35:45.263861 139924911310592 basic_session_run_hooks.py:260] loss = 21.520317, step = 823 (564.127 sec)
+I0703 15:36:19.444983 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 828 into ../data/model/model.ckpt.
+I0703 15:38:20.352246 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 850 into ../data/model/model.ckpt.
+I0703 15:40:26.648370 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 872 into ../data/model/model.ckpt.
+I0703 15:42:28.028518 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 894 into ../data/model/model.ckpt.
+I0703 15:44:31.696800 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 916 into ../data/model/model.ckpt.
+I0703 15:45:09.474958 139924911310592 basic_session_run_hooks.py:692] global_step/sec: 0.177238
+I0703 15:45:09.475845 139924911310592 basic_session_run_hooks.py:260] loss = 15.188614, step = 923 (564.212 sec)
+I0703 15:46:32.446777 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 937 into ../data/model/model.ckpt.
+I0703 15:48:35.552994 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 959 into ../data/model/model.ckpt.
+I0703 15:50:38.655092 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 982 into ../data/model/model.ckpt.
+I0703 15:52:43.409610 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1004 into ../data/model/model.ckpt.
+I0703 15:54:29.391089 139924911310592 basic_session_run_hooks.py:692] global_step/sec: 0.178598
+I0703 15:54:29.391839 139924911310592 basic_session_run_hooks.py:260] loss = 3.1446054, step = 1023 (559.916 sec)
+I0703 15:54:44.960947 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1026 into ../data/model/model.ckpt.
+I0703 15:56:48.384399 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1048 into ../data/model/model.ckpt.
+I0703 15:58:50.339947 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1069 into ../data/model/model.ckpt.
+I0703 16:00:51.319122 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1091 into ../data/model/model.ckpt.
+I0703 16:02:57.397103 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1114 into ../data/model/model.ckpt.
+I0703 16:03:48.498943 139924911310592 basic_session_run_hooks.py:692] global_step/sec: 0.178856
+I0703 16:03:48.499749 139924911310592 basic_session_run_hooks.py:260] loss = 5.0459895, step = 1123 (559.108 sec)
+I0703 16:04:57.804161 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1136 into ../data/model/model.ckpt.
+I0703 16:06:59.036454 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1158 into ../data/model/model.ckpt.
+I0703 16:09:03.402229 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1180 into ../data/model/model.ckpt.
+I0703 16:11:06.798427 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1202 into ../data/model/model.ckpt.
+I0703 16:13:09.648013 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1223 into ../data/model/model.ckpt.
+I0703 16:13:10.088341 139924911310592 basic_session_run_hooks.py:692] global_step/sec: 0.178066
+I0703 16:13:10.089065 139924911310592 basic_session_run_hooks.py:260] loss = 4.3625727, step = 1223 (561.589 sec)
+I0703 16:15:17.702002 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1246 into ../data/model/model.ckpt.
+I0703 16:17:21.350539 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1269 into ../data/model/model.ckpt.
+I0703 16:19:22.655431 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1291 into ../data/model/model.ckpt.
+I0703 16:21:23.695421 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1313 into ../data/model/model.ckpt.
+I0703 16:22:21.486133 139924911310592 basic_session_run_hooks.py:692] global_step/sec: 0.181357
+I0703 16:22:21.486917 139924911310592 basic_session_run_hooks.py:260] loss = 3.1503701, step = 1323 (551.398 sec)
+I0703 16:23:27.999489 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1335 into ../data/model/model.ckpt.
+I0703 16:25:29.434345 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1356 into ../data/model/model.ckpt.
+I0703 16:27:34.696739 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1379 into ../data/model/model.ckpt.
+I0703 16:29:36.899681 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1401 into ../data/model/model.ckpt.
+I0703 16:31:34.525460 139924911310592 basic_session_run_hooks.py:692] global_step/sec: 0.180819
+I0703 16:31:34.526174 139924911310592 basic_session_run_hooks.py:260] loss = 3.2794557, step = 1423 (553.039 sec)
+I0703 16:31:39.102746 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1424 into ../data/model/model.ckpt.
+I0703 16:33:42.686929 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1446 into ../data/model/model.ckpt.
+I0703 16:35:46.732067 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1469 into ../data/model/model.ckpt.
+I0703 16:37:50.024557 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1491 into ../data/model/model.ckpt.
+I0703 16:39:51.720432 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1512 into ../data/model/model.ckpt.
+I0703 16:40:46.541250 139924911310592 basic_session_run_hooks.py:692] global_step/sec: 0.181154
+I0703 16:40:46.542022 139924911310592 basic_session_run_hooks.py:260] loss = 3.1197302, step = 1523 (552.016 sec)
+I0703 16:41:58.274584 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1535 into ../data/model/model.ckpt.
+I0703 16:44:00.640461 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1557 into ../data/model/model.ckpt.
+I0703 16:46:04.299083 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1580 into ../data/model/model.ckpt.
+I0703 16:48:04.902618 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1602 into ../data/model/model.ckpt.
+I0703 16:49:58.946453 139924911310592 basic_session_run_hooks.py:692] global_step/sec: 0.181027
+I0703 16:49:58.947242 139924911310592 basic_session_run_hooks.py:260] loss = 2.2230692, step = 1623 (552.405 sec)
+I0703 16:50:05.291071 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1624 into ../data/model/model.ckpt.
+I0703 16:52:07.929543 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1646 into ../data/model/model.ckpt.
+I0703 16:54:09.169917 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1667 into ../data/model/model.ckpt.
+I0703 16:56:11.869193 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1689 into ../data/model/model.ckpt.
+I0703 16:58:12.513809 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1711 into ../data/model/model.ckpt.
+I0703 16:59:18.324501 139924911310592 basic_session_run_hooks.py:692] global_step/sec: 0.17877
+I0703 16:59:18.325233 139924911310592 basic_session_run_hooks.py:260] loss = 1.9054615, step = 1723 (559.378 sec)
+I0703 17:00:14.393436 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1733 into ../data/model/model.ckpt.
+I0703 17:02:15.493477 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1755 into ../data/model/model.ckpt.
+I0703 17:04:19.771747 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1777 into ../data/model/model.ckpt.
+I0703 17:06:21.399508 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1798 into ../data/model/model.ckpt.
+I0703 17:08:21.790222 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1820 into ../data/model/model.ckpt.
+I0703 17:08:41.005620 139924911310592 basic_session_run_hooks.py:692] global_step/sec: 0.177721
+I0703 17:08:41.006342 139924911310592 basic_session_run_hooks.py:260] loss = 2.1250136, step = 1823 (562.681 sec)
+I0703 17:10:25.947453 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1842 into ../data/model/model.ckpt.
+I0703 17:12:27.589328 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1865 into ../data/model/model.ckpt.
+I0703 17:14:29.706057 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1887 into ../data/model/model.ckpt.
+I0703 17:16:31.190470 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1909 into ../data/model/model.ckpt.
+I0703 17:17:55.047466 139924911310592 basic_session_run_hooks.py:692] global_step/sec: 0.180492
+I0703 17:17:55.048089 139924911310592 basic_session_run_hooks.py:260] loss = 1.1755513, step = 1923 (554.042 sec)
+I0703 17:18:31.793854 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1930 into ../data/model/model.ckpt.
+I0703 17:20:36.061841 139924911310592 basic_session_run_hooks.py:606] Saving checkpoints for 1950 into ../data/model/model.ckpt.
+Traceback (most recent call last):
+  File "train.py", line 181, in <module>
+    tf.app.run()
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/platform/app.py", line 40, in run
+    # Replace all '%s' with sys.argv[0], and all '%%' with '%'.
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/absl/app.py", line 300, in run
+    _run_main(main, args)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "train.py", line 177, in main
+    classifier.train(input_fn=_get_input, max_steps=FLAGS.max_num_steps)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 367, in train
+    max_steps: maximum number of steps to be run during training. It'll be
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1158, in _train_model
+    saving_listeners)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1192, in _train_model_default
+    # to use the new API
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1484, in _train_with_estimator_spec
+    labels = None
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 754, in run
+    """
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 1252, in run
+    
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 1338, in run
+    return outputs['caller']
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 1411, in run
+    
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 1169, in run
+    feed_dict=feed_dict,
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 950, in run
+    The optional `feed_dict` argument allows the caller to override
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1173, in _run
+    fetches: A value or list of values to fetch. See `tf.Session.run`
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1350, in _do_run
+    def _extend_graph(self):
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1356, in _do_call
+    
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1341, in _run_fn
+    node_name = m.group(3)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1429, in _call_tf_sessionrun
+    def __call__(self, *args, **kwargs):
+KeyboardInterrupt
+WARNING: Logging before flag parsing goes to stderr.
+W0703 19:27:50.205969 139975579617024 deprecation_wrapper.py:119] From train.py:83: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0703 19:27:50.206275 139975579617024 deprecation_wrapper.py:119] From train.py:83: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0703 19:27:50.206391 139975579617024 deprecation_wrapper.py:119] From train.py:181: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+W0703 19:27:50.206840 139975579617024 deprecation_wrapper.py:119] From train.py:148: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+W0703 19:27:50.206965 139975579617024 deprecation_wrapper.py:119] From train.py:149: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+I0703 19:27:50.207675 139975579617024 estimator.py:209] Using config: {'_model_dir': '../data/model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 120, '_session_config': gpu_options {
+  per_process_gpu_memory_fraction: 0.95
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f4e28e3d5c0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+W0703 19:27:50.217327 139975579617024 deprecation.py:323] From /home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0703 19:27:50.228253 139975579617024 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/mjsynth.py:127: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+Traceback (most recent call last):
+  File "train.py", line 181, in <module>
+    tf.app.run()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/absl/app.py", line 300, in run
+    _run_main(main, args)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "train.py", line 177, in main
+    classifier.train(input_fn=_get_input, max_steps=FLAGS.max_num_steps)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 367, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1158, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1185, in _train_model_default
+    input_fn, ModeKeys.TRAIN))
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1022, in _get_features_and_labels_from_input_fn
+    self._call_input_fn(input_fn, mode))
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1113, in _call_input_fn
+    return input_fn(**kwargs)
+  File "train.py", line 129, in _get_input
+    dataset = pipeline.get_data(FLAGS.static_data, **data_args)
+  File "/home/ubuntu/cnn_lstm_ctc_ocr/src/pipeline.py", line 81, in get_data
+    dataset = dpipe.get_dataset(dpipe_args)
+  File "/home/ubuntu/cnn_lstm_ctc_ocr/src/mjsynth.py", line 61, in get_dataset
+    buffer_size=buffer_sz)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/data/ops/readers.py", line 335, in __init__
+    filenames, compression_type, buffer_size, num_parallel_reads)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/data/ops/readers.py", line 306, in __init__
+    num_parallel_reads)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/data/ops/readers.py", line 86, in _create_dataset_reader
+    prefetch_input_elements=None)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/data/ops/readers.py", line 224, in __init__
+    map_func, self._transformation_name(), dataset=input_dataset)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 2555, in __init__
+    self._function = wrapper_fn._get_concrete_function_internal()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 1355, in _get_concrete_function_internal
+    *args, **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 1349, in _get_concrete_function_internal_garbage_collected
+    graph_function, _, _ = self._maybe_define_function(args, kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 1652, in _maybe_define_function
+    graph_function = self._create_graph_function(args, kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/eager/function.py", line 1545, in _create_graph_function
+    capture_by_value=self._capture_by_value),
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/func_graph.py", line 715, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 2549, in wrapper_fn
+    ret = _wrapper_helper(*args)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 2489, in _wrapper_helper
+    ret = func(*nested_args)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/data/ops/readers.py", line 78, in read_one_file
+    return dataset_creator(filename)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/data/ops/readers.py", line 303, in creator_fn
+    return _TFRecordDataset(filename, compression_type, buffer_size)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/data/ops/readers.py", line 206, in __init__
+    argument_default=_DEFAULT_READER_BUFFER_SIZE_BYTES)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/data/util/convert.py", line 32, in optional_param_to_tensor
+    argument_value, dtype=argument_dtype, name=argument_name)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1087, in convert_to_tensor
+    return convert_to_tensor_v2(value, dtype, preferred_dtype, name)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1145, in convert_to_tensor_v2
+    as_ref=False)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1224, in internal_convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 305, in _constant_tensor_conversion_function
+    return constant(v, dtype=dtype, name=name)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 246, in constant
+    allow_broadcast=True)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 284, in _constant_impl
+    allow_broadcast=allow_broadcast))
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/tensor_util.py", line 466, in make_tensor_proto
+    _AssertCompatible(values, dtype)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/tensor_util.py", line 371, in _AssertCompatible
+    (dtype.name, repr(mismatch), type(mismatch).__name__))
+TypeError: Expected int64, got 256.0 of type 'float' instead.
+Traceback (most recent call last):
+  File "train.py", line 20, in <module>
+    import tensorflow as tf
+ImportError: No module named tensorflow
+Traceback (most recent call last):
+  File "train.py", line 20, in <module>
+    import tensorflow as tf
+ImportError: No module named tensorflow
+Traceback (most recent call last):
+  File "train.py", line 20, in <module>
+    import tensorflow as tf
+ImportError: No module named tensorflow
+Traceback (most recent call last):
+  File "train.py", line 20, in <module>
+    import tensorflow as tf
+ImportError: No module named tensorflow
+/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/dask/config.py:168: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  data = yaml.load(f.read()) or {}
+WARNING: Logging before flag parsing goes to stderr.
+W0703 19:34:25.705782 139922530477824 deprecation_wrapper.py:119] From train.py:83: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0703 19:34:25.706005 139922530477824 deprecation_wrapper.py:119] From train.py:83: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0703 19:34:25.706120 139922530477824 deprecation_wrapper.py:119] From train.py:181: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+W0703 19:34:25.706561 139922530477824 deprecation_wrapper.py:119] From train.py:148: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+W0703 19:34:25.706693 139922530477824 deprecation_wrapper.py:119] From train.py:149: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+I0703 19:34:25.707313 139922530477824 estimator.py:209] Using config: {'_save_checkpoints_secs': 120, '_session_config': gpu_options {
+  per_process_gpu_memory_fraction: 0.95
+}
+, '_keep_checkpoint_max': 5, '_task_type': 'worker', '_train_distribute': None, '_is_chief': True, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f4211c7eb90>, '_model_dir': '../data/model', '_protocol': None, '_save_checkpoints_steps': None, '_keep_checkpoint_every_n_hours': 10000, '_service': None, '_num_ps_replicas': 0, '_tf_random_seed': None, '_save_summary_steps': 100, '_device_fn': None, '_experimental_distribute': None, '_num_worker_replicas': 1, '_task_id': 0, '_log_step_count_steps': 100, '_experimental_max_worker_delay_secs': None, '_evaluation_master': '', '_eval_distribute': None, '_global_id_in_cluster': 0, '_master': ''}
+W0703 19:34:25.717252 139922530477824 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/training_util.py:236: initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0703 19:34:25.727619 139922530477824 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/mjsynth.py:127: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+W0703 19:34:25.760381 139922530477824 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/mjsynth.py:69: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W0703 19:34:25.760607 139922530477824 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/mjsynth.py:71: The name tf.VarLenFeature is deprecated. Please use tf.io.VarLenFeature instead.
+
+W0703 19:34:25.760746 139922530477824 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/mjsynth.py:82: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W0703 19:34:25.788836 139922530477824 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/pipeline.py:101: bucket_by_sequence_length (from tensorflow.contrib.data.python.ops.grouping) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.bucket_by_sequence_length(...)`.
+W0703 19:34:25.795883 139922530477824 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/data/experimental/ops/grouping.py:193: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+I0703 19:34:25.856734 139922530477824 estimator.py:1145] Calling model_fn.
+W0703 19:34:25.857217 139922530477824 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:59: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+W0703 19:34:26.203675 139922530477824 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:82: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+W0703 19:34:26.287503 139922530477824 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:73: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+W0703 19:34:26.609370 139922530477824 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:167: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+W0703 19:34:26.609781 139922530477824 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+W0703 19:34:26.681308 139922530477824 deprecation.py:506] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/ops/init_ops.py:1251: calling __init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0703 19:34:27.224992 139922530477824 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:196: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+W0703 19:34:27.661236 139922530477824 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:203: The name tf.nn.ctc_loss is deprecated. Please use tf.compat.v1.nn.ctc_loss instead.
+
+W0703 19:34:27.663475 139922530477824 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model_fn.py:86: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+W0703 19:34:27.663609 139922530477824 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model_fn.py:88: The name tf.train.get_global_step is deprecated. Please use tf.compat.v1.train.get_global_step instead.
+
+W0703 19:34:27.667737 139922530477824 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model_fn.py:94: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0703 19:34:29.773384 139922530477824 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model_fn.py:105: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+W0703 19:34:29.774769 139922530477824 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model_fn.py:286: The name tf.train.Scaffold is deprecated. Please use tf.compat.v1.train.Scaffold instead.
+
+I0703 19:34:29.774996 139922530477824 estimator.py:1147] Done calling model_fn.
+I0703 19:34:29.776227 139922530477824 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+I0703 19:34:30.530433 139922530477824 monitored_session.py:240] Graph was finalized.
+2019-07-03 19:34:30.530783: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-07-03 19:34:30.538860: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300080000 Hz
+2019-07-03 19:34:30.539050: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5634cbd93180 executing computations on platform Host. Devices:
+2019-07-03 19:34:30.539073: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+W0703 19:34:30.540436 139922530477824 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+I0703 19:34:30.542252 139922530477824 saver.py:1280] Restoring parameters from ../data/model/model.ckpt-2099
+2019-07-03 19:34:30.769812: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+W0703 19:34:30.893585 139922530477824 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1066: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+I0703 19:34:31.050463 139922530477824 session_manager.py:500] Running local_init_op.
+I0703 19:34:31.093936 139922530477824 session_manager.py:502] Done running local_init_op.
+I0703 19:34:33.152698 139922530477824 basic_session_run_hooks.py:606] Saving checkpoints for 2099 into ../data/model/model.ckpt.
+I0703 19:34:42.114712 139922530477824 basic_session_run_hooks.py:262] loss = 0.8297919, step = 2100
+/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/dask/config.py:168: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  data = yaml.load(f.read()) or {}
+WARNING: Logging before flag parsing goes to stderr.
+W0703 20:05:29.404588 139714700494592 deprecation_wrapper.py:119] From train.py:83: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0703 20:05:29.404918 139714700494592 deprecation_wrapper.py:119] From train.py:83: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0703 20:05:29.405105 139714700494592 deprecation_wrapper.py:119] From train.py:181: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+W0703 20:05:29.405800 139714700494592 deprecation_wrapper.py:119] From train.py:148: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+W0703 20:05:29.405997 139714700494592 deprecation_wrapper.py:119] From train.py:149: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+I0703 20:05:29.406794 139714700494592 estimator.py:209] Using config: {'_save_checkpoints_secs': 120, '_session_config': gpu_options {
+  per_process_gpu_memory_fraction: 0.95
+}
+, '_keep_checkpoint_max': 5, '_task_type': 'worker', '_train_distribute': None, '_is_chief': True, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f117d1a5b10>, '_model_dir': '../data/model', '_protocol': None, '_save_checkpoints_steps': None, '_keep_checkpoint_every_n_hours': 10000, '_service': None, '_num_ps_replicas': 0, '_tf_random_seed': None, '_save_summary_steps': 100, '_device_fn': None, '_experimental_distribute': None, '_num_worker_replicas': 1, '_task_id': 0, '_log_step_count_steps': 100, '_experimental_max_worker_delay_secs': None, '_evaluation_master': '', '_eval_distribute': None, '_global_id_in_cluster': 0, '_master': ''}
+W0703 20:05:29.433687 139714700494592 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/training_util.py:236: initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0703 20:05:29.448034 139714700494592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/mjsynth.py:127: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+W0703 20:05:29.509919 139714700494592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/mjsynth.py:69: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W0703 20:05:29.510248 139714700494592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/mjsynth.py:71: The name tf.VarLenFeature is deprecated. Please use tf.io.VarLenFeature instead.
+
+W0703 20:05:29.510458 139714700494592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/mjsynth.py:82: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W0703 20:05:29.558092 139714700494592 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/pipeline.py:101: bucket_by_sequence_length (from tensorflow.contrib.data.python.ops.grouping) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.bucket_by_sequence_length(...)`.
+W0703 20:05:29.570437 139714700494592 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/data/experimental/ops/grouping.py:193: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+I0703 20:05:29.675946 139714700494592 estimator.py:1145] Calling model_fn.
+W0703 20:05:29.676690 139714700494592 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:59: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+W0703 20:05:30.347517 139714700494592 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:82: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+W0703 20:05:30.498581 139714700494592 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:73: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+W0703 20:05:31.099551 139714700494592 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:167: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+W0703 20:05:31.100231 139714700494592 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/ops/rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+W0703 20:05:31.238929 139714700494592 deprecation.py:506] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/ops/init_ops.py:1251: calling __init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0703 20:05:32.271300 139714700494592 deprecation.py:323] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:196: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+W0703 20:05:33.168116 139714700494592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model.py:203: The name tf.nn.ctc_loss is deprecated. Please use tf.compat.v1.nn.ctc_loss instead.
+
+W0703 20:05:33.171924 139714700494592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model_fn.py:86: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+W0703 20:05:33.172149 139714700494592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model_fn.py:88: The name tf.train.get_global_step is deprecated. Please use tf.compat.v1.train.get_global_step instead.
+
+W0703 20:05:33.179229 139714700494592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model_fn.py:94: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0703 20:05:36.712059 139714700494592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model_fn.py:105: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+W0703 20:05:36.714276 139714700494592 deprecation_wrapper.py:119] From /home/ubuntu/cnn_lstm_ctc_ocr/src/model_fn.py:286: The name tf.train.Scaffold is deprecated. Please use tf.compat.v1.train.Scaffold instead.
+
+I0703 20:05:36.714586 139714700494592 estimator.py:1147] Done calling model_fn.
+I0703 20:05:36.716603 139714700494592 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+I0703 20:05:38.164697 139714700494592 monitored_session.py:240] Graph was finalized.
+2019-07-03 20:05:38.165178: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-07-03 20:05:38.178286: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2019-07-03 20:05:38.283822: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-07-03 20:05:38.284828: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x559231694680 executing computations on platform CUDA. Devices:
+2019-07-03 20:05:38.284857: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-07-03 20:05:38.293831: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300080000 Hz
+2019-07-03 20:05:38.294099: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x559231b82ce0 executing computations on platform Host. Devices:
+2019-07-03 20:05:38.294130: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2019-07-03 20:05:38.294392: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-07-03 20:05:38.295288: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.562
+pciBusID: 0000:00:1e.0
+2019-07-03 20:05:38.295491: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcudart.so.10.0'; dlerror: libcudart.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-07-03 20:05:38.295610: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcublas.so.10.0'; dlerror: libcublas.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-07-03 20:05:38.295720: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcufft.so.10.0'; dlerror: libcufft.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-07-03 20:05:38.295831: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcurand.so.10.0'; dlerror: libcurand.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-07-03 20:05:38.295957: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcusolver.so.10.0'; dlerror: libcusolver.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-07-03 20:05:38.296071: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcusparse.so.10.0'; dlerror: libcusparse.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-07-03 20:05:38.300361: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2019-07-03 20:05:38.300405: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1663] Cannot dlopen some GPU libraries. Skipping registering GPU devices...
+2019-07-03 20:05:38.300437: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-07-03 20:05:38.300454: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2019-07-03 20:05:38.300467: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+W0703 20:05:38.301683 139714700494592 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+I0703 20:05:38.305556 139714700494592 saver.py:1280] Restoring parameters from ../data/model/model.ckpt-2405
+2019-07-03 20:05:38.770703: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+W0703 20:05:38.935043 139714700494592 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/saver.py:1066: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+I0703 20:05:39.286986 139714700494592 session_manager.py:500] Running local_init_op.
+I0703 20:05:39.394226 139714700494592 session_manager.py:502] Done running local_init_op.
+I0703 20:05:43.470160 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2405 into ../data/model/model.ckpt.
+I0703 20:05:57.021008 139714700494592 basic_session_run_hooks.py:262] loss = 0.7964177, step = 2406
+I0703 20:07:48.993530 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2415 into ../data/model/model.ckpt.
+W0703 20:07:49.225064 139714700494592 deprecation.py:323] From /home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+I0703 20:09:51.157109 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2425 into ../data/model/model.ckpt.
+I0703 20:11:51.497919 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2437 into ../data/model/model.ckpt.
+I0703 20:13:59.097889 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2447 into ../data/model/model.ckpt.
+I0703 20:16:02.414263 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2459 into ../data/model/model.ckpt.
+I0703 20:18:13.354171 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2469 into ../data/model/model.ckpt.
+I0703 20:20:21.645967 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2481 into ../data/model/model.ckpt.
+I0703 20:22:25.430788 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2492 into ../data/model/model.ckpt.
+I0703 20:24:30.900135 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2502 into ../data/model/model.ckpt.
+I0703 20:25:06.629390 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0869861
+I0703 20:25:06.630706 139714700494592 basic_session_run_hooks.py:260] loss = 1.5813892, step = 2506 (1149.610 sec)
+I0703 20:26:37.767389 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2514 into ../data/model/model.ckpt.
+I0703 20:28:41.633487 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2524 into ../data/model/model.ckpt.
+I0703 20:30:46.542308 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2536 into ../data/model/model.ckpt.
+I0703 20:33:04.916678 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2547 into ../data/model/model.ckpt.
+I0703 20:35:11.542896 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2559 into ../data/model/model.ckpt.
+I0703 20:37:16.344003 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2570 into ../data/model/model.ckpt.
+I0703 20:39:22.095807 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2580 into ../data/model/model.ckpt.
+I0703 20:41:27.502464 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2592 into ../data/model/model.ckpt.
+I0703 20:43:32.062215 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2602 into ../data/model/model.ckpt.
+I0703 20:44:20.868360 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0866372
+I0703 20:44:20.869316 139714700494592 basic_session_run_hooks.py:260] loss = 0.78148234, step = 2606 (1154.239 sec)
+I0703 20:45:38.140372 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2614 into ../data/model/model.ckpt.
+I0703 20:47:50.056006 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2625 into ../data/model/model.ckpt.
+I0703 20:50:03.222664 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2637 into ../data/model/model.ckpt.
+I0703 20:52:07.210269 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2648 into ../data/model/model.ckpt.
+I0703 20:54:12.375737 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2658 into ../data/model/model.ckpt.
+I0703 20:56:18.569422 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2670 into ../data/model/model.ckpt.
+I0703 20:58:23.055393 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2680 into ../data/model/model.ckpt.
+I0703 21:00:30.144412 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2692 into ../data/model/model.ckpt.
+I0703 21:02:35.294646 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2702 into ../data/model/model.ckpt.
+I0703 21:03:24.066385 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0874739
+I0703 21:03:24.067827 139714700494592 basic_session_run_hooks.py:260] loss = 1.3524547, step = 2706 (1143.198 sec)
+I0703 21:04:44.208169 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2714 into ../data/model/model.ckpt.
+I0703 21:06:49.476361 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2725 into ../data/model/model.ckpt.
+I0703 21:08:58.843450 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2735 into ../data/model/model.ckpt.
+I0703 21:11:06.020407 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2747 into ../data/model/model.ckpt.
+I0703 21:13:11.005079 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2757 into ../data/model/model.ckpt.
+I0703 21:15:12.314012 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2768 into ../data/model/model.ckpt.
+I0703 21:17:23.502785 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2779 into ../data/model/model.ckpt.
+I0703 21:19:27.404386 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2789 into ../data/model/model.ckpt.
+I0703 21:21:34.776249 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2801 into ../data/model/model.ckpt.
+I0703 21:22:37.725817 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0866807
+I0703 21:22:37.726619 139714700494592 basic_session_run_hooks.py:260] loss = 0.761008, step = 2806 (1153.659 sec)
+I0703 21:23:35.421461 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2811 into ../data/model/model.ckpt.
+I0703 21:25:43.524436 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2823 into ../data/model/model.ckpt.
+I0703 21:27:59.584919 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2834 into ../data/model/model.ckpt.
+I0703 21:30:09.516339 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2846 into ../data/model/model.ckpt.
+I0703 21:32:10.206295 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2857 into ../data/model/model.ckpt.
+I0703 21:34:18.976144 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2867 into ../data/model/model.ckpt.
+I0703 21:36:20.846729 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2879 into ../data/model/model.ckpt.
+I0703 21:38:33.619554 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2890 into ../data/model/model.ckpt.
+I0703 21:40:38.204601 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2902 into ../data/model/model.ckpt.
+I0703 21:41:28.653963 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.088423
+I0703 21:41:28.655204 139714700494592 basic_session_run_hooks.py:260] loss = 9.220912, step = 2906 (1130.929 sec)
+I0703 21:42:46.979603 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2912 into ../data/model/model.ckpt.
+I0703 21:44:51.162367 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2924 into ../data/model/model.ckpt.
+I0703 21:46:51.864854 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2935 into ../data/model/model.ckpt.
+I0703 21:48:59.882771 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2945 into ../data/model/model.ckpt.
+I0703 21:51:01.794872 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2957 into ../data/model/model.ckpt.
+I0703 21:53:07.912022 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2967 into ../data/model/model.ckpt.
+I0703 21:55:09.082117 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2979 into ../data/model/model.ckpt.
+I0703 21:57:17.576739 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 2989 into ../data/model/model.ckpt.
+I0703 21:59:23.311871 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3001 into ../data/model/model.ckpt.
+I0703 22:00:16.467953 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0886671
+I0703 22:00:16.468997 139714700494592 basic_session_run_hooks.py:260] loss = 3.2802079, step = 3006 (1127.814 sec)
+I0703 22:01:26.230282 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3012 into ../data/model/model.ckpt.
+I0703 22:03:31.242295 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3022 into ../data/model/model.ckpt.
+I0703 22:05:35.227866 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3034 into ../data/model/model.ckpt.
+I0703 22:07:41.061702 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3044 into ../data/model/model.ckpt.
+I0703 22:09:46.242573 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3056 into ../data/model/model.ckpt.
+I0703 22:11:46.463504 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3066 into ../data/model/model.ckpt.
+I0703 22:13:50.112508 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3077 into ../data/model/model.ckpt.
+I0703 22:15:55.438383 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3088 into ../data/model/model.ckpt.
+I0703 22:17:56.719208 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3098 into ../data/model/model.ckpt.
+I0703 22:19:21.167396 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0873592
+I0703 22:19:21.168145 139714700494592 basic_session_run_hooks.py:260] loss = 0.71572685, step = 3106 (1144.699 sec)
+I0703 22:20:01.932827 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3110 into ../data/model/model.ckpt.
+I0703 22:22:05.620537 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3120 into ../data/model/model.ckpt.
+I0703 22:24:14.234060 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3132 into ../data/model/model.ckpt.
+I0703 22:26:14.336117 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3143 into ../data/model/model.ckpt.
+I0703 22:28:22.058754 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3153 into ../data/model/model.ckpt.
+I0703 22:30:26.747396 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3165 into ../data/model/model.ckpt.
+I0703 22:32:27.759669 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3175 into ../data/model/model.ckpt.
+I0703 22:34:32.734236 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3187 into ../data/model/model.ckpt.
+I0703 22:36:39.327131 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3198 into ../data/model/model.ckpt.
+I0703 22:38:11.427891 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0884752
+I0703 22:38:11.428745 139714700494592 basic_session_run_hooks.py:260] loss = 1.251244, step = 3206 (1130.261 sec)
+I0703 22:38:42.432276 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3209 into ../data/model/model.ckpt.
+I0703 22:40:47.663364 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3220 into ../data/model/model.ckpt.
+I0703 22:42:48.752964 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3230 into ../data/model/model.ckpt.
+I0703 22:44:50.956779 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3242 into ../data/model/model.ckpt.
+I0703 22:46:54.473381 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3252 into ../data/model/model.ckpt.
+I0703 22:48:57.700658 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3264 into ../data/model/model.ckpt.
+I0703 22:51:14.811475 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3275 into ../data/model/model.ckpt.
+I0703 22:53:20.928630 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3287 into ../data/model/model.ckpt.
+I0703 22:55:23.634419 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3298 into ../data/model/model.ckpt.
+I0703 22:57:05.728238 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0881601
+I0703 22:57:05.729307 139714700494592 basic_session_run_hooks.py:260] loss = 0.7481046, step = 3306 (1134.301 sec)
+I0703 22:57:28.342998 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3308 into ../data/model/model.ckpt.
+I0703 22:59:34.107098 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3320 into ../data/model/model.ckpt.
+I0703 23:01:34.933043 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3330 into ../data/model/model.ckpt.
+I0703 23:03:38.950529 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3342 into ../data/model/model.ckpt.
+I0703 23:05:39.127904 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3352 into ../data/model/model.ckpt.
+I0703 23:07:46.784027 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3364 into ../data/model/model.ckpt.
+I0703 23:09:53.138046 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3375 into ../data/model/model.ckpt.
+I0703 23:11:55.591948 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3385 into ../data/model/model.ckpt.
+I0703 23:14:09.818306 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3398 into ../data/model/model.ckpt.
+I0703 23:15:42.486466 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0895449
+I0703 23:15:42.487857 139714700494592 basic_session_run_hooks.py:260] loss = 0.17418805, step = 3406 (1116.759 sec)
+I0703 23:16:10.458694 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3408 into ../data/model/model.ckpt.
+I0703 23:18:15.296746 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3420 into ../data/model/model.ckpt.
+I0703 23:20:30.402453 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3431 into ../data/model/model.ckpt.
+I0703 23:22:36.444572 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3443 into ../data/model/model.ckpt.
+I0703 23:24:40.512728 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3454 into ../data/model/model.ckpt.
+I0703 23:26:43.440253 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3464 into ../data/model/model.ckpt.
+I0703 23:28:48.416804 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3476 into ../data/model/model.ckpt.
+I0703 23:30:48.703078 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3486 into ../data/model/model.ckpt.
+I0703 23:32:52.428510 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3498 into ../data/model/model.ckpt.
+I0703 23:34:24.587085 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0891186
+I0703 23:34:24.587996 139714700494592 basic_session_run_hooks.py:260] loss = 0.61527723, step = 3506 (1122.100 sec)
+I0703 23:34:58.680784 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3509 into ../data/model/model.ckpt.
+I0703 23:37:00.862175 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3520 into ../data/model/model.ckpt.
+I0703 23:39:04.444621 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3531 into ../data/model/model.ckpt.
+I0703 23:41:10.233479 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3541 into ../data/model/model.ckpt.
+I0703 23:43:14.638231 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3553 into ../data/model/model.ckpt.
+I0703 23:45:14.889640 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3563 into ../data/model/model.ckpt.
+I0703 23:47:18.861144 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3575 into ../data/model/model.ckpt.
+I0703 23:49:28.493803 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3586 into ../data/model/model.ckpt.
+I0703 23:51:36.733994 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3598 into ../data/model/model.ckpt.
+I0703 23:53:09.522284 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.088894
+I0703 23:53:09.527268 139714700494592 basic_session_run_hooks.py:260] loss = 0.6038382, step = 3606 (1124.939 sec)
+I0703 23:53:41.096457 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3609 into ../data/model/model.ckpt.
+I0703 23:55:46.584846 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3619 into ../data/model/model.ckpt.
+I0703 23:57:56.945738 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3632 into ../data/model/model.ckpt.
+I0703 23:59:59.565126 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3642 into ../data/model/model.ckpt.
+I0704 00:02:03.028055 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3654 into ../data/model/model.ckpt.
+I0704 00:04:09.233850 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3665 into ../data/model/model.ckpt.
+I0704 00:06:10.981051 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3676 into ../data/model/model.ckpt.
+I0704 00:08:13.229994 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3687 into ../data/model/model.ckpt.
+I0704 00:10:19.787225 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3697 into ../data/model/model.ckpt.
+I0704 00:11:45.865456 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0895782
+I0704 00:11:45.866254 139714700494592 basic_session_run_hooks.py:260] loss = 0.61357915, step = 3706 (1116.339 sec)
+I0704 00:12:33.892872 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3710 into ../data/model/model.ckpt.
+I0704 00:14:34.943370 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3720 into ../data/model/model.ckpt.
+I0704 00:16:37.793726 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3732 into ../data/model/model.ckpt.
+I0704 00:18:44.701998 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3743 into ../data/model/model.ckpt.
+I0704 00:20:47.093552 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3754 into ../data/model/model.ckpt.
+I0704 00:22:50.360177 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3765 into ../data/model/model.ckpt.
+I0704 00:24:57.217756 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3775 into ../data/model/model.ckpt.
+I0704 00:27:07.895006 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3788 into ../data/model/model.ckpt.
+I0704 00:29:11.382750 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3798 into ../data/model/model.ckpt.
+I0704 00:30:32.252655 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0887794
+I0704 00:30:32.253429 139714700494592 basic_session_run_hooks.py:260] loss = 0.5999062, step = 3806 (1126.387 sec)
+I0704 00:31:15.760287 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3810 into ../data/model/model.ckpt.
+I0704 00:33:21.861632 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3820 into ../data/model/model.ckpt.
+I0704 00:35:23.013356 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3832 into ../data/model/model.ckpt.
+I0704 00:37:25.856344 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3843 into ../data/model/model.ckpt.
+I0704 00:39:31.645102 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3853 into ../data/model/model.ckpt.
+I0704 00:41:35.838876 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3865 into ../data/model/model.ckpt.
+I0704 00:43:44.595086 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3876 into ../data/model/model.ckpt.
+I0704 00:45:47.821266 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3888 into ../data/model/model.ckpt.
+I0704 00:48:04.404716 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3899 into ../data/model/model.ckpt.
+I0704 00:49:23.005491 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0884367
+I0704 00:49:23.006767 139714700494592 basic_session_run_hooks.py:260] loss = 0.49174166, step = 3906 (1130.753 sec)
+I0704 00:50:08.826220 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3911 into ../data/model/model.ckpt.
+I0704 00:52:12.741939 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3922 into ../data/model/model.ckpt.
+I0704 00:54:15.330243 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3932 into ../data/model/model.ckpt.
+I0704 00:56:19.541415 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3944 into ../data/model/model.ckpt.
+I0704 00:58:19.557681 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3954 into ../data/model/model.ckpt.
+I0704 01:00:23.888166 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3966 into ../data/model/model.ckpt.
+I0704 01:02:40.751794 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3977 into ../data/model/model.ckpt.
+I0704 01:04:44.470870 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 3989 into ../data/model/model.ckpt.
+I0704 01:06:46.407155 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4000 into ../data/model/model.ckpt.
+I0704 01:08:01.773655 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.089384
+I0704 01:08:01.774477 139714700494592 basic_session_run_hooks.py:260] loss = 0.7163302, step = 4006 (1118.768 sec)
+I0704 01:08:50.111366 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4010 into ../data/model/model.ckpt.
+I0704 01:10:54.846940 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4022 into ../data/model/model.ckpt.
+I0704 01:12:55.545242 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4032 into ../data/model/model.ckpt.
+I0704 01:15:00.103460 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4044 into ../data/model/model.ckpt.
+I0704 01:17:16.622936 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4055 into ../data/model/model.ckpt.
+I0704 01:19:22.872159 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4067 into ../data/model/model.ckpt.
+I0704 01:21:25.118676 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4078 into ../data/model/model.ckpt.
+I0704 01:23:29.261893 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4088 into ../data/model/model.ckpt.
+I0704 01:25:33.157370 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4100 into ../data/model/model.ckpt.
+I0704 01:26:46.743983 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0888912
+I0704 01:26:46.756158 139714700494592 basic_session_run_hooks.py:260] loss = 0.80783856, step = 4106 (1124.982 sec)
+I0704 01:27:34.037045 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4110 into ../data/model/model.ckpt.
+I0704 01:29:38.260598 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4122 into ../data/model/model.ckpt.
+I0704 01:31:56.103003 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4133 into ../data/model/model.ckpt.
+I0704 01:34:02.872081 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4145 into ../data/model/model.ckpt.
+I0704 01:36:15.511831 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4157 into ../data/model/model.ckpt.
+I0704 01:38:23.012161 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4167 into ../data/model/model.ckpt.
+I0704 01:40:26.919332 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4179 into ../data/model/model.ckpt.
+I0704 01:42:28.421859 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4189 into ../data/model/model.ckpt.
+I0704 01:44:34.027255 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4201 into ../data/model/model.ckpt.
+I0704 01:45:31.513560 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0889071
+I0704 01:45:31.514614 139714700494592 basic_session_run_hooks.py:260] loss = 0.37346575, step = 4206 (1124.758 sec)
+I0704 01:46:36.955583 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4211 into ../data/model/model.ckpt.
+I0704 01:48:44.339394 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4223 into ../data/model/model.ckpt.
+I0704 01:50:49.032263 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4234 into ../data/model/model.ckpt.
+I0704 01:52:54.445471 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4244 into ../data/model/model.ckpt.
+I0704 01:54:58.336781 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4256 into ../data/model/model.ckpt.
+I0704 01:57:03.355001 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4266 into ../data/model/model.ckpt.
+I0704 01:59:10.135967 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4278 into ../data/model/model.ckpt.
+I0704 02:01:28.931143 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4289 into ../data/model/model.ckpt.
+I0704 02:03:34.421735 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4301 into ../data/model/model.ckpt.
+I0704 02:04:28.338376 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0879643
+I0704 02:04:28.339492 139714700494592 basic_session_run_hooks.py:260] loss = 0.14079657, step = 4306 (1136.825 sec)
+I0704 02:05:46.657599 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4313 into ../data/model/model.ckpt.
+I0704 02:07:55.538451 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4323 into ../data/model/model.ckpt.
+I0704 02:10:01.242588 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4335 into ../data/model/model.ckpt.
+I0704 02:12:03.166249 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4345 into ../data/model/model.ckpt.
+I0704 02:14:04.532207 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4357 into ../data/model/model.ckpt.
+I0704 02:16:12.368195 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4367 into ../data/model/model.ckpt.
+I0704 02:18:19.611375 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4379 into ../data/model/model.ckpt.
+I0704 02:20:23.512140 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4390 into ../data/model/model.ckpt.
+I0704 02:22:27.442920 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4400 into ../data/model/model.ckpt.
+I0704 02:23:26.163877 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0878869
+I0704 02:23:26.164827 139714700494592 basic_session_run_hooks.py:260] loss = 0.66694623, step = 4406 (1137.825 sec)
+I0704 02:24:37.281419 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4412 into ../data/model/model.ckpt.
+I0704 02:26:43.843199 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4423 into ../data/model/model.ckpt.
+I0704 02:28:53.706643 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4435 into ../data/model/model.ckpt.
+I0704 02:30:57.727916 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4445 into ../data/model/model.ckpt.
+I0704 02:33:04.189848 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4457 into ../data/model/model.ckpt.
+I0704 02:35:06.881829 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4468 into ../data/model/model.ckpt.
+I0704 02:37:11.069150 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4478 into ../data/model/model.ckpt.
+I0704 02:39:17.822438 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4490 into ../data/model/model.ckpt.
+I0704 02:41:19.389425 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4500 into ../data/model/model.ckpt.
+I0704 02:42:23.441025 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0879293
+I0704 02:42:23.441963 139714700494592 basic_session_run_hooks.py:260] loss = 1.2177469, step = 4506 (1137.277 sec)
+I0704 02:43:25.140985 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4512 into ../data/model/model.ckpt.
+I0704 02:45:36.263688 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4523 into ../data/model/model.ckpt.
+I0704 02:47:48.123687 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4535 into ../data/model/model.ckpt.
+I0704 02:49:51.248316 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4546 into ../data/model/model.ckpt.
+I0704 02:51:55.436405 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4556 into ../data/model/model.ckpt.
+I0704 02:54:01.351950 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4568 into ../data/model/model.ckpt.
+I0704 02:56:02.458741 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4578 into ../data/model/model.ckpt.
+I0704 02:58:07.573009 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4590 into ../data/model/model.ckpt.
+I0704 03:00:13.825140 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4601 into ../data/model/model.ckpt.
+I0704 03:01:18.334706 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.088114
+I0704 03:01:18.335820 139714700494592 basic_session_run_hooks.py:260] loss = 0.81360495, step = 4606 (1134.894 sec)
+I0704 03:02:16.727806 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4612 into ../data/model/model.ckpt.
+I0704 03:04:21.900338 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4623 into ../data/model/model.ckpt.
+I0704 03:06:29.332875 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4633 into ../data/model/model.ckpt.
+I0704 03:08:34.934700 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4645 into ../data/model/model.ckpt.
+I0704 03:10:44.217478 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4656 into ../data/model/model.ckpt.
+I0704 03:12:50.149837 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4668 into ../data/model/model.ckpt.
+I0704 03:14:55.784477 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4679 into ../data/model/model.ckpt.
+I0704 03:16:58.325709 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4690 into ../data/model/model.ckpt.
+I0704 03:19:02.546402 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4701 into ../data/model/model.ckpt.
+I0704 03:20:10.131022 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0883551
+I0704 03:20:10.132127 139714700494592 basic_session_run_hooks.py:260] loss = 0.9155688, step = 4706 (1131.796 sec)
+I0704 03:21:09.236938 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4711 into ../data/model/model.ckpt.
+I0704 03:23:23.829564 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4724 into ../data/model/model.ckpt.
+I0704 03:25:24.577867 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4734 into ../data/model/model.ckpt.
+I0704 03:27:28.865459 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4746 into ../data/model/model.ckpt.
+I0704 03:29:35.338213 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4757 into ../data/model/model.ckpt.
+I0704 03:31:36.325197 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4768 into ../data/model/model.ckpt.
+I0704 03:33:38.039572 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4779 into ../data/model/model.ckpt.
+I0704 03:35:45.354979 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4789 into ../data/model/model.ckpt.
+I0704 03:37:52.757522 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4802 into ../data/model/model.ckpt.
+I0704 03:38:43.420243 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0898239
+I0704 03:38:43.421284 139714700494592 basic_session_run_hooks.py:260] loss = 7.3004236, step = 4806 (1113.289 sec)
+I0704 03:39:58.742921 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4812 into ../data/model/model.ckpt.
+I0704 03:42:02.609450 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4824 into ../data/model/model.ckpt.
+I0704 03:44:02.722862 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4834 into ../data/model/model.ckpt.
+I0704 03:46:10.380275 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4846 into ../data/model/model.ckpt.
+I0704 03:48:13.309752 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4857 into ../data/model/model.ckpt.
+I0704 03:50:13.420348 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4867 into ../data/model/model.ckpt.
+I0704 03:52:17.139992 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4879 into ../data/model/model.ckpt.
+I0704 03:54:22.854899 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4889 into ../data/model/model.ckpt.
+I0704 03:56:26.223124 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4901 into ../data/model/model.ckpt.
+I0704 03:57:25.257692 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0891395
+I0704 03:57:25.258588 139714700494592 basic_session_run_hooks.py:260] loss = 1.2543343, step = 4906 (1121.837 sec)
+I0704 03:58:26.926279 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4912 into ../data/model/model.ckpt.
+I0704 04:00:27.564353 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4922 into ../data/model/model.ckpt.
+I0704 04:02:28.496313 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4933 into ../data/model/model.ckpt.
+I0704 04:04:29.186845 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4943 into ../data/model/model.ckpt.
+I0704 04:06:34.760889 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4955 into ../data/model/model.ckpt.
+I0704 04:08:37.691488 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4965 into ../data/model/model.ckpt.
+I0704 04:10:42.896136 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4977 into ../data/model/model.ckpt.
+I0704 04:12:46.300060 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4988 into ../data/model/model.ckpt.
+I0704 04:14:52.795206 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 4998 into ../data/model/model.ckpt.
+I0704 04:16:12.671036 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0886986
+I0704 04:16:12.672132 139714700494592 basic_session_run_hooks.py:260] loss = 0.45234942, step = 5006 (1127.414 sec)
+I0704 04:17:00.965543 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5010 into ../data/model/model.ckpt.
+I0704 04:19:01.010299 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5020 into ../data/model/model.ckpt.
+I0704 04:21:05.319696 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5032 into ../data/model/model.ckpt.
+I0704 04:23:16.258747 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5043 into ../data/model/model.ckpt.
+I0704 04:25:28.119640 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5055 into ../data/model/model.ckpt.
+I0704 04:27:30.883085 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5066 into ../data/model/model.ckpt.
+I0704 04:29:35.164979 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5076 into ../data/model/model.ckpt.
+I0704 04:31:39.390358 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5088 into ../data/model/model.ckpt.
+I0704 04:33:40.196366 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5098 into ../data/model/model.ckpt.
+I0704 04:35:00.799176 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0886424
+I0704 04:35:00.800271 139714700494592 basic_session_run_hooks.py:260] loss = 0.6161855, step = 5106 (1128.128 sec)
+I0704 04:35:43.541665 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5110 into ../data/model/model.ckpt.
+I0704 04:38:00.175640 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5121 into ../data/model/model.ckpt.
+I0704 04:40:05.794017 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5133 into ../data/model/model.ckpt.
+I0704 04:42:08.295789 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5144 into ../data/model/model.ckpt.
+I0704 04:44:11.849236 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5154 into ../data/model/model.ckpt.
+I0704 04:46:17.415307 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5166 into ../data/model/model.ckpt.
+I0704 04:48:18.606910 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5176 into ../data/model/model.ckpt.
+I0704 04:50:22.524471 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5188 into ../data/model/model.ckpt.
+I0704 04:52:32.136547 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5199 into ../data/model/model.ckpt.
+I0704 04:53:58.044682 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0879318
+I0704 04:53:58.045764 139714700494592 basic_session_run_hooks.py:260] loss = 0.2534902, step = 5206 (1137.245 sec)
+I0704 04:54:43.949567 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5211 into ../data/model/model.ckpt.
+I0704 04:56:48.465225 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5222 into ../data/model/model.ckpt.
+I0704 04:58:53.160212 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5232 into ../data/model/model.ckpt.
+I0704 05:00:58.274137 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5244 into ../data/model/model.ckpt.
+I0704 05:03:07.998779 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5255 into ../data/model/model.ckpt.
+I0704 05:05:15.127687 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5267 into ../data/model/model.ckpt.
+I0704 05:07:21.160756 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5278 into ../data/model/model.ckpt.
+I0704 05:09:23.197283 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5289 into ../data/model/model.ckpt.
+I0704 05:11:32.450345 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5300 into ../data/model/model.ckpt.
+I0704 05:12:43.313647 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0888677
+I0704 05:12:43.314532 139714700494592 basic_session_run_hooks.py:260] loss = 0.37574303, step = 5306 (1125.269 sec)
+I0704 05:13:42.414596 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5311 into ../data/model/model.ckpt.
+I0704 05:15:47.440795 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5323 into ../data/model/model.ckpt.
+I0704 05:17:47.698148 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5333 into ../data/model/model.ckpt.
+I0704 05:19:52.060277 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5345 into ../data/model/model.ckpt.
+I0704 05:21:54.729909 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5355 into ../data/model/model.ckpt.
+I0704 05:23:59.248356 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5367 into ../data/model/model.ckpt.
+I0704 05:26:01.897767 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5378 into ../data/model/model.ckpt.
+I0704 05:28:04.905251 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5388 into ../data/model/model.ckpt.
+I0704 05:30:09.287211 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5400 into ../data/model/model.ckpt.
+I0704 05:31:18.704477 139714700494592 basic_session_run_hooks.py:692] global_step/sec: 0.0896547
+I0704 05:31:18.705589 139714700494592 basic_session_run_hooks.py:260] loss = 0.59647214, step = 5406 (1115.391 sec)
+I0704 05:32:22.018439 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5411 into ../data/model/model.ckpt.
+I0704 05:34:27.526087 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5423 into ../data/model/model.ckpt.
+I0704 05:36:31.027622 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5433 into ../data/model/model.ckpt.
+I0704 05:38:35.973644 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5445 into ../data/model/model.ckpt.
+I0704 05:40:39.078277 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5456 into ../data/model/model.ckpt.
+I0704 05:42:42.876530 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5466 into ../data/model/model.ckpt.
+I0704 05:44:46.368302 139714700494592 basic_session_run_hooks.py:606] Saving checkpoints for 5478 into ../data/model/model.ckpt.
+Traceback (most recent call last):
+  File "train.py", line 181, in <module>
+    tf.app.run()
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/absl/app.py", line 300, in run
+    _run_main(main, args)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "train.py", line 177, in main
+    classifier.train(input_fn=_get_input, max_steps=FLAGS.max_num_steps)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 367, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1158, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1192, in _train_model_default
+    saving_listeners)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1484, in _train_with_estimator_spec
+    _, loss = mon_sess.run([estimator_spec.train_op, estimator_spec.loss])
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 754, in run
+    run_metadata=run_metadata)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 1252, in run
+    run_metadata=run_metadata)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 1338, in run
+    return self._sess.run(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 1411, in run
+    run_metadata=run_metadata)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 1169, in run
+    return self._sess.run(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 950, in run
+    run_metadata_ptr)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1173, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1350, in _do_run
+    run_metadata)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1356, in _do_call
+    return fn(*args)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1341, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "/home/ubuntu/anaconda3/envs/clco/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1429, in _call_tf_sessionrun
+    run_metadata)
+KeyboardInterrupt
+make: *** No rule to make target 'train'.  Stop.

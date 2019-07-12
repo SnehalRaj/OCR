@@ -1,0 +1,1276 @@
+38
+num_classes 38
+num_hidden: 64 num_layers: 1
+loading test
+Traceback (most recent call last):
+  File "lstm_and_ctc_ocr_train.py", line 30, in <module>
+    test_inputs, test_targets, test_seq_len = utils.get_data_set('test')
+  File "/home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/utils.py", line 79, in get_data_set
+    inputs, codes = common.unzip(list(common.read_data_for_lstm_ctc(dirname, start_index, end_index)))
+  File "/home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/common.py", line 146, in unzip
+    xs = numpy.array(xs)
+ValueError: could not broadcast input array from shape (64,128) into shape (64)
+38
+num_classes 38
+num_hidden: 64 num_layers: 1
+loading test
+Traceback (most recent call last):
+  File "lstm_and_ctc_ocr_train.py", line 30, in <module>
+    test_inputs, test_targets, test_seq_len = utils.get_data_set('test')
+  File "/home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/utils.py", line 79, in get_data_set
+    inputs, codes = common.unzip(list(common.read_data_for_lstm_ctc(dirname, start_index, end_index)))
+  File "/home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/common.py", line 146, in unzip
+    xs = numpy.array(xs)
+ValueError: could not broadcast input array from shape (64,128) into shape (64)
+38
+num_classes 38
+num_hidden: 64 num_layers: 1
+loading test
+Traceback (most recent call last):
+  File "lstm_and_ctc_ocr_train.py", line 30, in <module>
+    test_inputs, test_targets, test_seq_len = utils.get_data_set('test')
+  File "/home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/utils.py", line 79, in get_data_set
+    inputs, codes = common.unzip(list(common.read_data_for_lstm_ctc(dirname, start_index, end_index)))
+  File "/home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/common.py", line 146, in unzip
+    xs = numpy.array(xs)
+ValueError: could not broadcast input array from shape (64,128) into shape (64)
+38
+num_classes 38
+num_hidden: 64 num_layers: 1
+loading test
+Traceback (most recent call last):
+  File "lstm_and_ctc_ocr_train.py", line 30, in <module>
+    test_inputs, test_targets, test_seq_len = utils.get_data_set('test')
+  File "/home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/utils.py", line 79, in get_data_set
+    inputs, codes = common.unzip(list(common.read_data_for_lstm_ctc(dirname, start_index, end_index)))
+  File "/home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/common.py", line 146, in unzip
+    xs = numpy.array(xs)
+ValueError: could not broadcast input array from shape (64,128) into shape (64)
+38
+num_classes 38
+num_hidden: 64 num_layers: 1
+loading test
+Traceback (most recent call last):
+  File "lstm_and_ctc_ocr_train.py", line 30, in <module>
+    test_inputs, test_targets, test_seq_len = utils.get_data_set('test',128)
+  File "/home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/utils.py", line 79, in get_data_set
+    inputs, codes = common.unzip(list(common.read_data_for_lstm_ctc(dirname, start_index, end_index)))
+  File "/home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/common.py", line 121, in read_data_for_lstm_ctc
+    for i in range(start_index, end_index):
+TypeError: 'NoneType' object cannot be interpreted as an integer
+38
+num_classes 38
+num_hidden: 64 num_layers: 1
+loading test
+Traceback (most recent call last):
+  File "lstm_and_ctc_ocr_train.py", line 30, in <module>
+    test_inputs, test_targets, test_seq_len = utils.get_data_set('test',128)
+  File "/home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/utils.py", line 79, in get_data_set
+    inputs, codes = common.unzip(list(common.read_data_for_lstm_ctc(dirname, start_index, end_index)))
+  File "/home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/common.py", line 121, in read_data_for_lstm_ctc
+    for i in range(start_index, end_index):
+TypeError: 'NoneType' object cannot be interpreted as an integer
+WARNING: Logging before flag parsing goes to stderr.
+W0628 14:42:16.938233 139935942530816 deprecation_wrapper.py:119] From lstm_and_ctc_ocr_train.py:56: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+W0628 14:42:16.946685 139935942530816 deprecation_wrapper.py:119] From /home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/model.py:41: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0628 14:42:16.947884 139935942530816 deprecation_wrapper.py:119] From /home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/model.py:12: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+W0628 14:42:16.966446 139935942530816 deprecation_wrapper.py:119] From /home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/model.py:27: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+W0628 14:42:17.027088 139935942530816 deprecation_wrapper.py:119] From /home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/model.py:90: The name tf.sparse_placeholder is deprecated. Please use tf.compat.v1.sparse_placeholder instead.
+
+W0628 14:42:21.204025 139935942530816 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0628 14:42:21.204354 139935942530816 deprecation.py:323] From /home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/model.py:77: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+W0628 14:42:21.205087 139935942530816 deprecation.py:323] From /home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/model.py:103: MultiRNNCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.StackedRNNCells, and will be replaced by that in Tensorflow 2.0.
+W0628 14:42:21.205570 139935942530816 deprecation.py:323] From /home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/model.py:106: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+W0628 14:42:21.666809 139935942530816 deprecation.py:506] From /home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0628 14:42:21.686443 139935942530816 deprecation.py:506] From /home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/ops/rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0628 14:42:22.851949 139935942530816 deprecation.py:323] From /home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0628 14:42:22.910331 139935942530816 deprecation_wrapper.py:119] From lstm_and_ctc_ocr_train.py:63: The name tf.nn.ctc_loss is deprecated. Please use tf.compat.v1.nn.ctc_loss instead.
+
+W0628 14:42:22.912505 139935942530816 deprecation_wrapper.py:119] From lstm_and_ctc_ocr_train.py:66: The name tf.train.MomentumOptimizer is deprecated. Please use tf.compat.v1.train.MomentumOptimizer instead.
+
+W0628 14:42:23.933041 139935942530816 deprecation_wrapper.py:119] From lstm_and_ctc_ocr_train.py:77: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+W0628 14:42:23.934164 139935942530816 deprecation_wrapper.py:119] From lstm_and_ctc_ocr_train.py:96: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2019-06-28 14:42:23.934443: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-06-28 14:42:23.946251: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2019-06-28 14:42:25.063093: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-28 14:42:25.068834: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-28 14:42:25.075705: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-28 14:42:25.091632: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-28 14:42:25.103855: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-28 14:42:25.116367: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-28 14:42:25.131701: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-28 14:42:25.147654: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-28 14:42:25.149942: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x562ffa8796b0 executing computations on platform CUDA. Devices:
+2019-06-28 14:42:25.149984: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-06-28 14:42:25.149992: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (1): Tesla K80, Compute Capability 3.7
+2019-06-28 14:42:25.149998: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (2): Tesla K80, Compute Capability 3.7
+2019-06-28 14:42:25.150005: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (3): Tesla K80, Compute Capability 3.7
+2019-06-28 14:42:25.150011: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (4): Tesla K80, Compute Capability 3.7
+2019-06-28 14:42:25.150017: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (5): Tesla K80, Compute Capability 3.7
+2019-06-28 14:42:25.150023: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (6): Tesla K80, Compute Capability 3.7
+2019-06-28 14:42:25.150031: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (7): Tesla K80, Compute Capability 3.7
+2019-06-28 14:42:25.156634: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300085000 Hz
+2019-06-28 14:42:25.161417: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x562ffa9d78e0 executing computations on platform Host. Devices:
+2019-06-28 14:42:25.161477: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2019-06-28 14:42:25.167840: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-28 14:42:25.169638: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.562
+pciBusID: 0000:00:17.0
+2019-06-28 14:42:25.169823: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-28 14:42:25.171908: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 1 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.562
+pciBusID: 0000:00:18.0
+2019-06-28 14:42:25.172064: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-28 14:42:25.173759: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 2 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.562
+pciBusID: 0000:00:19.0
+2019-06-28 14:42:25.173889: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-28 14:42:25.175699: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 3 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.562
+pciBusID: 0000:00:1a.0
+2019-06-28 14:42:25.175859: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-28 14:42:25.177679: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 4 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.562
+pciBusID: 0000:00:1b.0
+2019-06-28 14:42:25.177818: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-28 14:42:25.179662: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 5 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.562
+pciBusID: 0000:00:1c.0
+2019-06-28 14:42:25.179769: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-28 14:42:25.181513: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 6 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.562
+pciBusID: 0000:00:1d.0
+2019-06-28 14:42:25.181652: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-28 14:42:25.183557: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 7 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.562
+pciBusID: 0000:00:1e.0
+2019-06-28 14:42:25.183786: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcudart.so.10.0'; dlerror: libcudart.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-06-28 14:42:25.183912: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcublas.so.10.0'; dlerror: libcublas.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-06-28 14:42:25.184030: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcufft.so.10.0'; dlerror: libcufft.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-06-28 14:42:25.184139: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcurand.so.10.0'; dlerror: libcurand.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-06-28 14:42:25.184242: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcusolver.so.10.0'; dlerror: libcusolver.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-06-28 14:42:25.184318: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcusparse.so.10.0'; dlerror: libcusparse.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: :/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2019-06-28 14:42:25.188150: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2019-06-28 14:42:25.188203: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1663] Cannot dlopen some GPU libraries. Skipping registering GPU devices...
+2019-06-28 14:42:25.188866: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-06-28 14:42:25.188896: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 1 2 3 4 5 6 7 
+2019-06-28 14:42:25.188917: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N Y Y Y Y Y Y Y 
+2019-06-28 14:42:25.188930: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 1:   Y N Y Y Y Y Y Y 
+2019-06-28 14:42:25.188941: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 2:   Y Y N Y Y Y Y Y 
+2019-06-28 14:42:25.188952: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 3:   Y Y Y N Y Y Y Y 
+2019-06-28 14:42:25.188963: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 4:   Y Y Y Y N Y Y Y 
+2019-06-28 14:42:25.188974: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 5:   Y Y Y Y Y N Y Y 
+2019-06-28 14:42:25.188987: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 6:   Y Y Y Y Y Y N Y 
+2019-06-28 14:42:25.189000: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 7:   Y Y Y Y Y Y Y N 
+2019-06-28 14:42:25.522208: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+W0628 14:42:25.650618 139935942530816 deprecation_wrapper.py:119] From lstm_and_ctc_ocr_train.py:100: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+38
+num_classes 38
+num_hidden: 64 num_layers: 1
+loading test
+Data loaded....
+Epoch....... 0
+loading train
+Step: 1 , batch seconds: 2.8294527530670166
+Step: 2 , batch seconds: 2.0080957412719727
+Step: 3 , batch seconds: 1.9577794075012207
+Step: 4 , batch seconds: 1.9956436157226562
+Step: 5 , batch seconds: 1.9788429737091064
+Step: 6 , batch seconds: 1.8669202327728271
+Step: 7 , batch seconds: 2.0139753818511963
+Step: 8 , batch seconds: 1.952817678451538
+Step: 9 , batch seconds: 1.9821174144744873
+Step: 10 , batch seconds: 1.9494102001190186
+Step: 11 , batch seconds: 1.9731359481811523
+Step: 12 , batch seconds: 2.0400002002716064
+Step: 13 , batch seconds: 2.0116803646087646
+Step: 14 , batch seconds: 1.9124841690063477
+Step: 15 , batch seconds: 1.9724605083465576
+Step: 16 , batch seconds: 2.014720916748047
+Step: 17 , batch seconds: 1.991065502166748
+Step: 18 , batch seconds: 1.9525673389434814
+Step: 19 , batch seconds: 1.9563639163970947
+Step: 20 , batch seconds: 1.9657397270202637
+Step: 21 , batch seconds: 1.8487603664398193
+Step: 22 , batch seconds: 1.950573444366455
+Step: 23 , batch seconds: 2.0025529861450195
+Step: 24 , batch seconds: 2.01080584526062
+Step: 25 , batch seconds: 1.993711233139038
+Step: 26 , batch seconds: 1.9305074214935303
+Step: 27 , batch seconds: 1.955428123474121
+Step: 28 , batch seconds: 1.9566006660461426
+Step: 29 , batch seconds: 1.8699162006378174
+Step: 30 , batch seconds: 1.9486808776855469
+Step: 31 , batch seconds: 1.9962737560272217
+Step: 32 , batch seconds: 1.9907617568969727
+Step: 33 , batch seconds: 1.9591035842895508
+Step: 34 , batch seconds: 1.9759845733642578
+Step: 35 , batch seconds: 1.9829158782958984
+Step: 36 , batch seconds: 1.9832687377929688
+Step: 37 , batch seconds: 1.9658899307250977
+Step: 38 , batch seconds: 1.9419653415679932
+Step: 39 , batch seconds: 1.9499807357788086
+Step: 40 , batch seconds: 1.9872066974639893
+Step: 41 , batch seconds: 1.9192545413970947
+Step: 42 , batch seconds: 1.9329619407653809
+Step: 43 , batch seconds: 1.9413566589355469
+Step: 44 , batch seconds: 1.933946132659912
+Step: 45 , batch seconds: 1.9591071605682373
+Step: 46 , batch seconds: 1.9502294063568115
+Step: 47 , batch seconds: 1.9902253150939941
+Step: 48 , batch seconds: 1.9934053421020508
+Step: 49 , batch seconds: 1.942063331604004
+Step: 50 , batch seconds: 1.923100233078003
+Step: 51 , batch seconds: 2.002488613128662
+Step: 52 , batch seconds: 1.9637079238891602
+Step: 53 , batch seconds: 1.9393792152404785
+Step: 54 , batch seconds: 1.9477145671844482
+Step: 55 , batch seconds: 1.955582857131958
+Step: 56 , batch seconds: 1.9849812984466553
+Step: 57 , batch seconds: 1.887801170349121
+Step: 58 , batch seconds: 1.9674491882324219
+Step: 59 , batch seconds: 1.8925657272338867
+Step: 60 , batch seconds: 1.936807632446289
+Step: 61 , batch seconds: 1.9527373313903809
+Step: 62 , batch seconds: 1.998321294784546
+Step: 63 , batch seconds: 2.0443146228790283
+Step: 64 , batch seconds: 1.9918322563171387
+Step: 65 , batch seconds: 1.8735942840576172
+Step: 66 , batch seconds: 1.9868173599243164
+Step: 67 , batch seconds: 2.0089454650878906
+Step: 68 , batch seconds: 1.9559357166290283
+Step: 69 , batch seconds: 1.9617972373962402
+Step: 70 , batch seconds: 1.9878871440887451
+Step: 71 , batch seconds: 1.974520206451416
+Step: 72 , batch seconds: 1.886716365814209
+Step: 73 , batch seconds: 2.027765989303589
+Step: 74 , batch seconds: 1.9704630374908447
+Step: 75 , batch seconds: 1.971449613571167
+Step: 76 , batch seconds: 1.9896442890167236
+Step: 77 , batch seconds: 1.966341495513916
+Step: 78 , batch seconds: 1.992859125137329
+Step: 79 , batch seconds: 1.896651029586792
+Step: 80 , batch seconds: 1.9453537464141846
+Step: 81 , batch seconds: 1.953073263168335
+Step: 82 , batch seconds: 2.0048627853393555
+Step: 83 , batch seconds: 1.9826600551605225
+Step: 84 , batch seconds: 1.9131054878234863
+Step: 85 , batch seconds: 1.9443714618682861
+Step: 86 , batch seconds: 2.0138301849365234
+Step: 87 , batch seconds: 1.913930892944336
+Step: 88 , batch seconds: 1.9675416946411133
+Step: 89 , batch seconds: 1.9761347770690918
+Step: 90 , batch seconds: 1.9497904777526855
+Step: 91 , batch seconds: 1.9242820739746094
+Step: 92 , batch seconds: 1.9568383693695068
+Step: 93 , batch seconds: 1.9417834281921387
+Step: 94 , batch seconds: 1.8728525638580322
+Step: 95 , batch seconds: 1.954054355621338
+Step: 96 , batch seconds: 1.986001968383789
+Step: 97 , batch seconds: 2.001554250717163
+Step: 98 , batch seconds: 1.9932472705841064
+Step: 99 , batch seconds: 1.9233403205871582
+Step: 100 , batch seconds: 1.9623377323150635
+Epoch 1/10000, steps = 100, train_cost = 73.031, train_ler = 0.000, val_cost = 54.407, val_ler = 0.933, time = 7.111s, learning_rate = 0.0010000000474974513
+Epoch....... 1
+Step: 101 , batch seconds: 1.981501817703247
+Step: 102 , batch seconds: 1.9704968929290771
+Step: 103 , batch seconds: 2.0030357837677
+Step: 104 , batch seconds: 1.9942336082458496
+Step: 105 , batch seconds: 1.933781385421753
+Step: 106 , batch seconds: 2.016279458999634
+Step: 107 , batch seconds: 2.0137367248535156
+Step: 108 , batch seconds: 1.9248056411743164
+Step: 109 , batch seconds: 1.9414255619049072
+Step: 110 , batch seconds: 1.9278459548950195
+Step: 111 , batch seconds: 1.973705768585205
+Step: 112 , batch seconds: 1.8771247863769531
+Step: 113 , batch seconds: 1.9879281520843506
+Step: 114 , batch seconds: 2.010867118835449
+Step: 115 , batch seconds: 1.956787109375
+Step: 116 , batch seconds: 1.961989402770996
+Step: 117 , batch seconds: 1.989900827407837
+Step: 118 , batch seconds: 1.9572739601135254
+Step: 119 , batch seconds: 1.9694950580596924
+Step: 120 , batch seconds: 1.846876621246338
+Step: 121 , batch seconds: 1.9816980361938477
+Step: 122 , batch seconds: 1.9604496955871582
+Step: 123 , batch seconds: 1.8830671310424805
+Step: 124 , batch seconds: 2.0167388916015625
+Step: 125 , batch seconds: 1.940953254699707
+Step: 126 , batch seconds: 2.0057432651519775
+Step: 127 , batch seconds: 1.8806724548339844
+Step: 128 , batch seconds: 1.9490187168121338
+Step: 129 , batch seconds: 1.914222002029419
+Step: 130 , batch seconds: 1.9214155673980713
+Step: 131 , batch seconds: 1.9803955554962158
+Step: 132 , batch seconds: 1.9821405410766602
+Step: 133 , batch seconds: 1.9705569744110107
+Step: 134 , batch seconds: 1.8514997959136963
+Step: 135 , batch seconds: 2.0001420974731445
+Step: 136 , batch seconds: 2.018889904022217
+Step: 137 , batch seconds: 1.9927942752838135
+Step: 138 , batch seconds: 1.9102740287780762
+Step: 139 , batch seconds: 1.975998878479004
+Step: 140 , batch seconds: 1.9705874919891357
+Step: 141 , batch seconds: 1.9800560474395752
+Step: 142 , batch seconds: 1.8780465126037598
+Step: 143 , batch seconds: 1.9664289951324463
+Step: 144 , batch seconds: 1.9327192306518555
+Step: 145 , batch seconds: 1.9774260520935059
+Step: 146 , batch seconds: 1.9934215545654297
+Step: 147 , batch seconds: 1.9899623394012451
+Step: 148 , batch seconds: 1.9841675758361816
+Step: 149 , batch seconds: 1.8574934005737305
+Step: 150 , batch seconds: 1.9730122089385986
+Step: 151 , batch seconds: 2.006877899169922
+Step: 152 , batch seconds: 2.011026620864868
+Step: 153 , batch seconds: 1.940338373184204
+Step: 154 , batch seconds: 1.953688621520996
+Step: 155 , batch seconds: 1.9577252864837646
+Step: 156 , batch seconds: 1.8975579738616943
+Step: 157 , batch seconds: 2.0059814453125
+Step: 158 , batch seconds: 1.9708547592163086
+Step: 159 , batch seconds: 1.95955491065979
+Step: 160 , batch seconds: 1.9599847793579102
+Step: 161 , batch seconds: 1.9082348346710205
+Step: 162 , batch seconds: 1.9891667366027832
+Step: 163 , batch seconds: 1.9301743507385254
+Step: 164 , batch seconds: 1.8539488315582275
+Step: 165 , batch seconds: 1.9470860958099365
+Step: 166 , batch seconds: 1.960846185684204
+Step: 167 , batch seconds: 1.9329302310943604
+Step: 168 , batch seconds: 1.9757344722747803
+Step: 169 , batch seconds: 1.946169376373291
+Step: 170 , batch seconds: 2.0122811794281006
+Step: 171 , batch seconds: 1.8432233333587646
+Step: 172 , batch seconds: 1.966399908065796
+Step: 173 , batch seconds: 1.9639360904693604
+Step: 174 , batch seconds: 2.009127616882324
+Step: 175 , batch seconds: 1.9522693157196045
+Step: 176 , batch seconds: 1.9277715682983398
+Step: 177 , batch seconds: 1.9266736507415771
+Step: 178 , batch seconds: 1.8882510662078857
+Step: 179 , batch seconds: 1.9935581684112549
+Step: 180 , batch seconds: 1.9377975463867188
+Step: 181 , batch seconds: 1.9403393268585205
+Step: 182 , batch seconds: 1.9006309509277344
+Step: 183 , batch seconds: 1.962052583694458
+Step: 184 , batch seconds: 1.9462592601776123
+Step: 185 , batch seconds: 1.9707083702087402
+Step: 186 , batch seconds: 1.8317608833312988
+Step: 187 , batch seconds: 1.9644808769226074
+Step: 188 , batch seconds: 2.0317699909210205
+Step: 189 , batch seconds: 2.037365674972534
+Step: 190 , batch seconds: 1.9120705127716064
+Step: 191 , batch seconds: 2.012709140777588
+Step: 192 , batch seconds: 1.944974660873413
+Step: 193 , batch seconds: 1.8474962711334229
+Step: 194 , batch seconds: 1.9268670082092285
+Step: 195 , batch seconds: 1.9990825653076172
+Step: 196 , batch seconds: 1.9939591884613037
+Step: 197 , batch seconds: 1.9085462093353271
+Step: 198 , batch seconds: 1.9393694400787354
+Step: 199 , batch seconds: 1.927011489868164
+Step: 200 , batch seconds: 1.87424898147583
+Epoch 2/10000, steps = 200, train_cost = 54.379, train_ler = 0.000, val_cost = 54.252, val_ler = 0.933, time = 6.917s, learning_rate = 0.0010000000474974513
+Epoch....... 2
+Step: 201 , batch seconds: 1.96706223487854
+Step: 202 , batch seconds: 1.9583516120910645
+Step: 203 , batch seconds: 2.013338088989258
+Step: 204 , batch seconds: 1.8945510387420654
+Step: 205 , batch seconds: 1.986004114151001
+Step: 206 , batch seconds: 1.9703404903411865
+Step: 207 , batch seconds: 2.0046586990356445
+Step: 208 , batch seconds: 1.9772522449493408
+Step: 209 , batch seconds: 1.9352879524230957
+Step: 210 , batch seconds: 1.9342522621154785
+Step: 211 , batch seconds: 1.9694032669067383
+Step: 212 , batch seconds: 1.8868968486785889
+Step: 213 , batch seconds: 1.9987308979034424
+Step: 214 , batch seconds: 1.9552721977233887
+Step: 215 , batch seconds: 1.9503633975982666
+Step: 216 , batch seconds: 1.9262330532073975
+Step: 217 , batch seconds: 1.9697556495666504
+Step: 218 , batch seconds: 1.9619355201721191
+Step: 219 , batch seconds: 1.8597872257232666
+Step: 220 , batch seconds: 1.9419689178466797
+Step: 221 , batch seconds: 1.97344970703125
+Step: 222 , batch seconds: 1.9933457374572754
+Step: 223 , batch seconds: 1.877882480621338
+Step: 224 , batch seconds: 1.976278305053711
+Step: 225 , batch seconds: 1.9426586627960205
+Step: 226 , batch seconds: 1.885124921798706
+Step: 227 , batch seconds: 1.9589755535125732
+Step: 228 , batch seconds: 1.9744718074798584
+Step: 229 , batch seconds: 1.8808419704437256
+Step: 230 , batch seconds: 1.963609218597412
+Step: 231 , batch seconds: 1.940155267715454
+Step: 232 , batch seconds: 1.908447027206421
+Step: 233 , batch seconds: 1.9772694110870361
+Step: 234 , batch seconds: 1.955024003982544
+Step: 235 , batch seconds: 1.9722819328308105
+Step: 236 , batch seconds: 1.9357223510742188
+Step: 237 , batch seconds: 1.9464340209960938
+Step: 238 , batch seconds: 1.9871528148651123
+Step: 239 , batch seconds: 1.9766418933868408
+Step: 240 , batch seconds: 1.8571865558624268
+Step: 241 , batch seconds: 1.9676685333251953
+Step: 242 , batch seconds: 2.031238555908203
+Step: 243 , batch seconds: 1.8939366340637207
+Step: 244 , batch seconds: 1.9591617584228516
+Step: 245 , batch seconds: 1.9736518859863281
+Step: 246 , batch seconds: 1.965888261795044
+Step: 247 , batch seconds: 1.972843885421753
+Step: 248 , batch seconds: 1.9595363140106201
+Step: 249 , batch seconds: 1.9265632629394531
+Step: 250 , batch seconds: 1.9345672130584717
+Step: 251 , batch seconds: 1.9446840286254883
+Step: 252 , batch seconds: 1.955071210861206
+Step: 253 , batch seconds: 2.0209503173828125
+Step: 254 , batch seconds: 1.9993150234222412
+Step: 255 , batch seconds: 1.944267988204956
+Step: 256 , batch seconds: 1.9079573154449463
+Step: 257 , batch seconds: 2.0052812099456787
+Step: 258 , batch seconds: 1.9840471744537354
+Step: 259 , batch seconds: 1.9154839515686035
+Step: 260 , batch seconds: 1.9327795505523682
+Step: 261 , batch seconds: 1.9674057960510254
+Step: 262 , batch seconds: 2.0002317428588867
+Step: 263 , batch seconds: 1.8316984176635742
+Step: 264 , batch seconds: 1.9626131057739258
+Step: 265 , batch seconds: 2.0031893253326416
+Step: 266 , batch seconds: 1.9003279209136963
+Step: 267 , batch seconds: 1.9411334991455078
+Step: 268 , batch seconds: 1.9966299533843994
+Step: 269 , batch seconds: 1.9847412109375
+Step: 270 , batch seconds: 1.8536491394042969
+Step: 271 , batch seconds: 2.007171154022217
+Step: 272 , batch seconds: 1.9493789672851562
+Step: 273 , batch seconds: 1.883087158203125
+Step: 274 , batch seconds: 1.9851677417755127
+Step: 275 , batch seconds: 1.9548687934875488
+Step: 276 , batch seconds: 1.9694464206695557
+Step: 277 , batch seconds: 1.9854304790496826
+Step: 278 , batch seconds: 1.8646986484527588
+Step: 279 , batch seconds: 1.9799830913543701
+Step: 280 , batch seconds: 1.8387730121612549
+Step: 281 , batch seconds: 1.9843380451202393
+Step: 282 , batch seconds: 1.9798803329467773
+Step: 283 , batch seconds: 2.0035486221313477
+Step: 284 , batch seconds: 2.03250789642334
+Step: 285 , batch seconds: 1.8787026405334473
+Step: 286 , batch seconds: 1.9721713066101074
+Step: 287 , batch seconds: 1.990058183670044
+Step: 288 , batch seconds: 1.900282859802246
+Step: 289 , batch seconds: 2.002977132797241
+Step: 290 , batch seconds: 1.9578912258148193
+Step: 291 , batch seconds: 1.9960722923278809
+Step: 292 , batch seconds: 1.856921672821045
+Step: 293 , batch seconds: 1.989844560623169
+Step: 294 , batch seconds: 2.0046005249023438
+Step: 295 , batch seconds: 1.9621498584747314
+Step: 296 , batch seconds: 1.8693571090698242
+Step: 297 , batch seconds: 1.9702248573303223
+Step: 298 , batch seconds: 1.9569103717803955
+Step: 299 , batch seconds: 1.9649803638458252
+Step: 300 , batch seconds: 1.8737666606903076
+Epoch 3/10000, steps = 300, train_cost = 54.272, train_ler = 0.000, val_cost = 54.174, val_ler = 0.933, time = 6.507s, learning_rate = 0.0010000000474974513
+Epoch....... 3
+Step: 301 , batch seconds: 1.9582455158233643
+Step: 302 , batch seconds: 1.9846601486206055
+Step: 303 , batch seconds: 1.9838697910308838
+Step: 304 , batch seconds: 1.84859299659729
+Step: 305 , batch seconds: 1.9958627223968506
+Step: 306 , batch seconds: 1.9978265762329102
+Step: 307 , batch seconds: 1.9877479076385498
+Step: 308 , batch seconds: 1.8869998455047607
+Step: 309 , batch seconds: 1.9516563415527344
+Step: 310 , batch seconds: 2.014369010925293
+Step: 311 , batch seconds: 1.8701729774475098
+Step: 312 , batch seconds: 1.98478364944458
+Step: 313 , batch seconds: 2.0407114028930664
+Step: 314 , batch seconds: 2.0213606357574463
+Step: 315 , batch seconds: 1.9795153141021729
+Step: 316 , batch seconds: 1.895472764968872
+Step: 317 , batch seconds: 1.9747545719146729
+Step: 318 , batch seconds: 1.9359312057495117
+Step: 319 , batch seconds: 1.902273178100586
+Step: 320 , batch seconds: 1.975074291229248
+Step: 321 , batch seconds: 1.9833099842071533
+Step: 322 , batch seconds: 1.9415040016174316
+Step: 323 , batch seconds: 1.928920030593872
+Step: 324 , batch seconds: 1.977576732635498
+Step: 325 , batch seconds: 1.9548697471618652
+Step: 326 , batch seconds: 1.8785412311553955
+Step: 327 , batch seconds: 1.9470126628875732
+Step: 328 , batch seconds: 2.0224568843841553
+Step: 329 , batch seconds: 1.9570014476776123
+Step: 330 , batch seconds: 1.9358623027801514
+Step: 331 , batch seconds: 1.970308780670166
+Step: 332 , batch seconds: 1.9837450981140137
+Step: 333 , batch seconds: 1.8675267696380615
+Step: 334 , batch seconds: 2.007563591003418
+Step: 335 , batch seconds: 1.9961919784545898
+Step: 336 , batch seconds: 1.989147663116455
+Step: 337 , batch seconds: 1.9027907848358154
+Step: 338 , batch seconds: 1.9858434200286865
+Step: 339 , batch seconds: 1.9208588600158691
+Step: 340 , batch seconds: 1.966543436050415
+Step: 341 , batch seconds: 1.8515892028808594
+Step: 342 , batch seconds: 1.9743244647979736
+Step: 343 , batch seconds: 2.0350632667541504
+Step: 344 , batch seconds: 2.039370536804199
+Step: 345 , batch seconds: 1.861255168914795
+Step: 346 , batch seconds: 1.974653959274292
+Step: 347 , batch seconds: 1.9827260971069336
+Step: 348 , batch seconds: 1.8309967517852783
+Step: 349 , batch seconds: 1.9991693496704102
+Step: 350 , batch seconds: 1.930565357208252
+Step: 351 , batch seconds: 1.931819200515747
+Step: 352 , batch seconds: 1.9679644107818604
+Step: 353 , batch seconds: 1.9746932983398438
+Step: 354 , batch seconds: 1.9670071601867676
+Step: 355 , batch seconds: 1.9027526378631592
+Step: 356 , batch seconds: 1.9629170894622803
+Step: 357 , batch seconds: 1.9677088260650635
+Step: 358 , batch seconds: 1.9273746013641357
+Step: 359 , batch seconds: 1.929093837738037
+Step: 360 , batch seconds: 1.9645557403564453
+Step: 361 , batch seconds: 1.9883506298065186
+Step: 362 , batch seconds: 2.008761167526245
+Step: 363 , batch seconds: 1.8471059799194336
+Step: 364 , batch seconds: 2.0048441886901855
+Step: 365 , batch seconds: 1.9928054809570312
+Step: 366 , batch seconds: 1.930638313293457
+Step: 367 , batch seconds: 1.992814064025879
+Step: 368 , batch seconds: 1.9554157257080078
+Step: 369 , batch seconds: 1.9574854373931885
+Step: 370 , batch seconds: 1.8436622619628906
+Step: 371 , batch seconds: 1.9748499393463135
+Step: 372 , batch seconds: 1.974595308303833
+Step: 373 , batch seconds: 1.8930673599243164
+Step: 374 , batch seconds: 1.9461126327514648
+Step: 375 , batch seconds: 2.031266450881958
+Step: 376 , batch seconds: 1.9616076946258545
+Step: 377 , batch seconds: 1.8907356262207031
+Step: 378 , batch seconds: 2.0098860263824463
+Step: 379 , batch seconds: 2.0085878372192383
+Step: 380 , batch seconds: 1.9921512603759766
+Step: 381 , batch seconds: 1.9757733345031738
+Step: 382 , batch seconds: 1.9517624378204346
+Step: 383 , batch seconds: 1.9422762393951416
+Step: 384 , batch seconds: 1.9667747020721436
+Step: 385 , batch seconds: 1.8836143016815186
+Step: 386 , batch seconds: 1.9711508750915527
+Step: 387 , batch seconds: 1.9928696155548096
+Step: 388 , batch seconds: 1.9974439144134521
+Step: 389 , batch seconds: 1.9498672485351562
+Step: 390 , batch seconds: 1.9333693981170654
+Step: 391 , batch seconds: 1.9743497371673584
+Step: 392 , batch seconds: 1.8641481399536133
+Step: 393 , batch seconds: 2.01227068901062
+Step: 394 , batch seconds: 1.9937992095947266
+Step: 395 , batch seconds: 1.9759550094604492
+Step: 396 , batch seconds: 1.9798269271850586
+Step: 397 , batch seconds: 1.9676778316497803
+Step: 398 , batch seconds: 1.9801814556121826
+Step: 399 , batch seconds: 1.887831211090088
+Step: 400 , batch seconds: 1.9631881713867188
+Epoch 4/10000, steps = 400, train_cost = 54.203, train_ler = 0.000, val_cost = 54.111, val_ler = 0.933, time = 7.073s, learning_rate = 0.0010000000474974513
+Epoch....... 4
+Step: 401 , batch seconds: 1.9047892093658447
+Step: 402 , batch seconds: 1.9196326732635498
+Step: 403 , batch seconds: 1.8408491611480713
+Step: 404 , batch seconds: 2.025395631790161
+Step: 405 , batch seconds: 1.9843494892120361
+Step: 406 , batch seconds: 1.9659099578857422
+Step: 407 , batch seconds: 1.9173600673675537
+Step: 408 , batch seconds: 1.9630546569824219
+Step: 409 , batch seconds: 1.9789988994598389
+Step: 410 , batch seconds: 1.967634916305542
+Step: 411 , batch seconds: 1.8624486923217773
+Step: 412 , batch seconds: 1.9060990810394287
+Step: 413 , batch seconds: 1.987403154373169
+Step: 414 , batch seconds: 1.9404988288879395
+Step: 415 , batch seconds: 1.9267935752868652
+Step: 416 , batch seconds: 1.9383666515350342
+Step: 417 , batch seconds: 2.0013554096221924
+Step: 418 , batch seconds: 1.8649473190307617
+Step: 419 , batch seconds: 1.9692883491516113
+Step: 420 , batch seconds: 2.026085376739502
+Step: 421 , batch seconds: 1.988393783569336
+Step: 422 , batch seconds: 1.8974628448486328
+Step: 423 , batch seconds: 1.996488094329834
+Step: 424 , batch seconds: 1.9658761024475098
+Step: 425 , batch seconds: 1.8628954887390137
+Step: 426 , batch seconds: 2.0017685890197754
+Step: 427 , batch seconds: 1.960566759109497
+Step: 428 , batch seconds: 1.9915642738342285
+Step: 429 , batch seconds: 1.9789299964904785
+Step: 430 , batch seconds: 1.897529125213623
+Step: 431 , batch seconds: 2.011214017868042
+Step: 432 , batch seconds: 1.947995662689209
+Step: 433 , batch seconds: 1.8840079307556152
+Step: 434 , batch seconds: 1.9680805206298828
+Step: 435 , batch seconds: 1.9867358207702637
+Step: 436 , batch seconds: 1.944913625717163
+Step: 437 , batch seconds: 1.938345193862915
+Step: 438 , batch seconds: 1.9613521099090576
+Step: 439 , batch seconds: 1.9888343811035156
+Step: 440 , batch seconds: 1.851726770401001
+Step: 441 , batch seconds: 1.9740374088287354
+Step: 442 , batch seconds: 1.9541921615600586
+Step: 443 , batch seconds: 1.9761126041412354
+Step: 444 , batch seconds: 2.0604138374328613
+Step: 445 , batch seconds: 1.8809700012207031
+Step: 446 , batch seconds: 1.9995875358581543
+Step: 447 , batch seconds: 1.9054524898529053
+Step: 448 , batch seconds: 1.9314382076263428
+Step: 449 , batch seconds: 1.986907720565796
+Step: 450 , batch seconds: 1.9491775035858154
+Step: 451 , batch seconds: 1.985595703125
+Step: 452 , batch seconds: 1.9340007305145264
+Step: 453 , batch seconds: 1.920027494430542
+Step: 454 , batch seconds: 1.9541852474212646
+Step: 455 , batch seconds: 1.8517892360687256
+Step: 456 , batch seconds: 1.9876854419708252
+Step: 457 , batch seconds: 1.9750151634216309
+Step: 458 , batch seconds: 1.991098165512085
+Step: 459 , batch seconds: 1.9599859714508057
+Step: 460 , batch seconds: 1.913001537322998
+Step: 461 , batch seconds: 1.931746006011963
+Step: 462 , batch seconds: 1.868051290512085
+Step: 463 , batch seconds: 1.9690120220184326
+Step: 464 , batch seconds: 1.9844119548797607
+Step: 465 , batch seconds: 1.9783551692962646
+Step: 466 , batch seconds: 2.0136640071868896
+Step: 467 , batch seconds: 1.9302217960357666
+Step: 468 , batch seconds: 1.9571356773376465
+Step: 469 , batch seconds: 1.8688290119171143
+Step: 470 , batch seconds: 1.9411046504974365
+Step: 471 , batch seconds: 2.016218423843384
+Step: 472 , batch seconds: 1.9736230373382568
+Step: 473 , batch seconds: 1.9857375621795654
+Step: 474 , batch seconds: 2.006272792816162
+Step: 475 , batch seconds: 1.9624865055084229
+Step: 476 , batch seconds: 1.9655375480651855
+Step: 477 , batch seconds: 1.9070353507995605
+Step: 478 , batch seconds: 1.9317636489868164
+Step: 479 , batch seconds: 1.9705379009246826
+Step: 480 , batch seconds: 2.004230260848999
+Step: 481 , batch seconds: 1.9589190483093262
+Step: 482 , batch seconds: 1.9236400127410889
+Step: 483 , batch seconds: 2.0118188858032227
+Step: 484 , batch seconds: 1.9621014595031738
+Step: 485 , batch seconds: 1.9681706428527832
+Step: 486 , batch seconds: 1.9743289947509766
+Step: 487 , batch seconds: 2.0006141662597656
+Step: 488 , batch seconds: 1.9632556438446045
+Step: 489 , batch seconds: 1.9661598205566406
+Step: 490 , batch seconds: 2.033372640609741
+Step: 491 , batch seconds: 1.846472978591919
+Step: 492 , batch seconds: 1.9705021381378174
+Step: 493 , batch seconds: 1.9109570980072021
+Step: 494 , batch seconds: 1.9759612083435059
+Step: 495 , batch seconds: 1.936018705368042
+Step: 496 , batch seconds: 1.9788777828216553
+Step: 497 , batch seconds: 1.9840378761291504
+Step: 498 , batch seconds: 1.9639639854431152
+Step: 499 , batch seconds: 1.9707629680633545
+Step: 500 , batch seconds: 1.912205696105957
+Epoch 5/10000, steps = 500, train_cost = 54.139, train_ler = 0.000, val_cost = 54.039, val_ler = 0.933, time = 6.993s, learning_rate = 0.0010000000474974513
+Epoch....... 5
+Step: 501 , batch seconds: 2.030736207962036
+Step: 502 , batch seconds: 1.8485770225524902
+Step: 503 , batch seconds: 1.999939203262329
+Step: 504 , batch seconds: 1.9747321605682373
+Step: 505 , batch seconds: 2.0096755027770996
+Step: 506 , batch seconds: 1.9322454929351807
+Step: 507 , batch seconds: 1.9420483112335205
+Step: 508 , batch seconds: 2.0123276710510254
+Step: 509 , batch seconds: 1.9868495464324951
+Step: 510 , batch seconds: 1.8761465549468994
+Step: 511 , batch seconds: 1.9312689304351807
+Step: 512 , batch seconds: 1.9466898441314697
+Step: 513 , batch seconds: 1.8574097156524658
+Step: 514 , batch seconds: 1.9994404315948486
+Step: 515 , batch seconds: 1.9858849048614502
+Step: 516 , batch seconds: 1.973442792892456
+Step: 517 , batch seconds: 1.8385634422302246
+Step: 518 , batch seconds: 1.9782459735870361
+Step: 519 , batch seconds: 2.030090570449829
+Step: 520 , batch seconds: 1.890397548675537
+Step: 521 , batch seconds: 1.9621872901916504
+Step: 522 , batch seconds: 1.945850133895874
+Step: 523 , batch seconds: 1.9212393760681152
+Step: 524 , batch seconds: 1.9481804370880127
+Step: 525 , batch seconds: 1.942690134048462
+Step: 526 , batch seconds: 1.9270555973052979
+Step: 527 , batch seconds: 1.9783351421356201
+Step: 528 , batch seconds: 2.0000498294830322
+Step: 529 , batch seconds: 1.955739974975586
+Step: 530 , batch seconds: 2.004631757736206
+Step: 531 , batch seconds: 1.9598615169525146
+Step: 532 , batch seconds: 1.8507575988769531
+Step: 533 , batch seconds: 2.015556812286377
+Step: 534 , batch seconds: 2.0071516036987305
+Step: 535 , batch seconds: 1.9701898097991943
+Step: 536 , batch seconds: 1.8687641620635986
+Step: 537 , batch seconds: 1.9406845569610596
+Step: 538 , batch seconds: 1.9916741847991943
+Step: 539 , batch seconds: 1.8625519275665283
+Step: 540 , batch seconds: 1.9634873867034912
+Step: 541 , batch seconds: 1.9949820041656494
+Step: 542 , batch seconds: 1.9918262958526611
+Step: 543 , batch seconds: 1.9628574848175049
+Step: 544 , batch seconds: 1.9533891677856445
+Step: 545 , batch seconds: 1.974118947982788
+Step: 546 , batch seconds: 1.8767356872558594
+Step: 547 , batch seconds: 1.9733991622924805
+Step: 548 , batch seconds: 1.9666414260864258
+Step: 549 , batch seconds: 1.9743220806121826
+Step: 550 , batch seconds: 1.988149881362915
+Step: 551 , batch seconds: 1.8833363056182861
+Step: 552 , batch seconds: 1.9703874588012695
+Step: 553 , batch seconds: 1.9636082649230957
+Step: 554 , batch seconds: 1.8772056102752686
+Step: 555 , batch seconds: 1.9736907482147217
+Step: 556 , batch seconds: 2.0075950622558594
+Step: 557 , batch seconds: 1.9927430152893066
+Step: 558 , batch seconds: 1.9464619159698486
+Step: 559 , batch seconds: 1.9509327411651611
+Step: 560 , batch seconds: 1.9365084171295166
+Step: 561 , batch seconds: 1.8826525211334229
+Step: 562 , batch seconds: 1.9419355392456055
+Step: 563 , batch seconds: 2.0163843631744385
+Step: 564 , batch seconds: 1.979966640472412
+Step: 565 , batch seconds: 1.876495361328125
+Step: 566 , batch seconds: 2.008734941482544
+Step: 567 , batch seconds: 1.9753272533416748
+Step: 568 , batch seconds: 1.900374412536621
+Step: 569 , batch seconds: 1.9695773124694824
+Step: 570 , batch seconds: 1.9473440647125244
+Step: 571 , batch seconds: 1.9694466590881348
+Step: 572 , batch seconds: 1.9269495010375977
+Step: 573 , batch seconds: 1.9475021362304688
+Step: 574 , batch seconds: 1.9511785507202148
+Step: 575 , batch seconds: 1.9637155532836914
+Step: 576 , batch seconds: 1.8621673583984375
+Step: 577 , batch seconds: 1.970383882522583
+Step: 578 , batch seconds: 1.9834339618682861
+Step: 579 , batch seconds: 1.9363677501678467
+Step: 580 , batch seconds: 1.9501283168792725
+Step: 581 , batch seconds: 1.9736952781677246
+Step: 582 , batch seconds: 1.9594857692718506
+Step: 583 , batch seconds: 1.8659799098968506
+Step: 584 , batch seconds: 1.9984967708587646
+Step: 585 , batch seconds: 2.0040857791900635
+Step: 586 , batch seconds: 1.8985624313354492
+Step: 587 , batch seconds: 1.9521732330322266
+Step: 588 , batch seconds: 1.9728543758392334
+Step: 589 , batch seconds: 1.9755699634552002
+Step: 590 , batch seconds: 1.8503007888793945
+Step: 591 , batch seconds: 1.9825067520141602
+Step: 592 , batch seconds: 1.9990088939666748
+Step: 593 , batch seconds: 1.9895715713500977
+Step: 594 , batch seconds: 1.8910150527954102
+Step: 595 , batch seconds: 1.9756457805633545
+Step: 596 , batch seconds: 1.9668395519256592
+Step: 597 , batch seconds: 1.9869256019592285
+Step: 598 , batch seconds: 1.8602323532104492
+Step: 599 , batch seconds: 1.950394868850708
+Step: 600 , batch seconds: 1.9900085926055908
+Epoch 6/10000, steps = 600, train_cost = 54.053, train_ler = 0.000, val_cost = 53.930, val_ler = 0.933, time = 6.954s, learning_rate = 0.0010000000474974513
+Epoch....... 6
+Step: 601 , batch seconds: 2.006211042404175
+Step: 602 , batch seconds: 1.8460876941680908
+Step: 603 , batch seconds: 1.9941072463989258
+Step: 604 , batch seconds: 1.964493751525879
+Step: 605 , batch seconds: 1.9206476211547852
+Step: 606 , batch seconds: 2.0000479221343994
+Step: 607 , batch seconds: 1.956085205078125
+Step: 608 , batch seconds: 1.9690313339233398
+Step: 609 , batch seconds: 1.8665544986724854
+Step: 610 , batch seconds: 1.9590790271759033
+Step: 611 , batch seconds: 2.0263800621032715
+Step: 612 , batch seconds: 2.03053617477417
+Step: 613 , batch seconds: 2.0097386837005615
+Step: 614 , batch seconds: 1.9869401454925537
+Step: 615 , batch seconds: 1.9075675010681152
+Step: 616 , batch seconds: 1.8985848426818848
+Step: 617 , batch seconds: 1.9560470581054688
+Step: 618 , batch seconds: 1.9565949440002441
+Step: 619 , batch seconds: 2.019747734069824
+Step: 620 , batch seconds: 1.9937078952789307
+Step: 621 , batch seconds: 1.8956220149993896
+Step: 622 , batch seconds: 1.9718680381774902
+Step: 623 , batch seconds: 1.967749834060669
+Step: 624 , batch seconds: 1.8436918258666992
+Step: 625 , batch seconds: 1.976261854171753
+Step: 626 , batch seconds: 1.9702684879302979
+Step: 627 , batch seconds: 1.9845683574676514
+Step: 628 , batch seconds: 1.936575174331665
+Step: 629 , batch seconds: 1.940436840057373
+Step: 630 , batch seconds: 2.0112874507904053
+Step: 631 , batch seconds: 1.8377270698547363
+Step: 632 , batch seconds: 1.9631500244140625
+Step: 633 , batch seconds: 1.9759507179260254
+Step: 634 , batch seconds: 2.0132782459259033
+Step: 635 , batch seconds: 1.9720497131347656
+Step: 636 , batch seconds: 1.89019775390625
+Step: 637 , batch seconds: 1.9329097270965576
+Step: 638 , batch seconds: 1.8356423377990723
+Step: 639 , batch seconds: 2.02020001411438
+Step: 640 , batch seconds: 1.9756214618682861
+Step: 641 , batch seconds: 1.9569439888000488
+Step: 642 , batch seconds: 2.0233371257781982
+Step: 643 , batch seconds: 2.0225725173950195
+Step: 644 , batch seconds: 1.987595558166504
+Step: 645 , batch seconds: 1.9561901092529297
+Step: 646 , batch seconds: 1.9626855850219727
+Step: 647 , batch seconds: 2.0072455406188965
+Step: 648 , batch seconds: 1.967583417892456
+Step: 649 , batch seconds: 1.9525642395019531
+Step: 650 , batch seconds: 1.9308736324310303
+Step: 651 , batch seconds: 1.9450948238372803
+Step: 652 , batch seconds: 2.0065712928771973
+Step: 653 , batch seconds: 1.826584815979004
+Step: 654 , batch seconds: 2.0206985473632812
+Step: 655 , batch seconds: 1.9915239810943604
+Step: 656 , batch seconds: 1.9729852676391602
+Step: 657 , batch seconds: 1.8888249397277832
+Step: 658 , batch seconds: 1.9494962692260742
+Step: 659 , batch seconds: 1.9862792491912842
+Step: 660 , batch seconds: 1.870781421661377
+Step: 661 , batch seconds: 1.9845681190490723
+Step: 662 , batch seconds: 1.961327314376831
+Step: 663 , batch seconds: 1.9807994365692139
+Step: 664 , batch seconds: 1.935192584991455
+Step: 665 , batch seconds: 1.9324936866760254
+Step: 666 , batch seconds: 1.9942138195037842
+Step: 667 , batch seconds: 1.856191873550415
+Step: 668 , batch seconds: 1.9978907108306885
+Step: 669 , batch seconds: 2.0006003379821777
+Step: 670 , batch seconds: 2.0104029178619385
+Step: 671 , batch seconds: 1.967320203781128
+Step: 672 , batch seconds: 1.9481689929962158
+Step: 673 , batch seconds: 1.9613571166992188
+Step: 674 , batch seconds: 1.9643332958221436
+Step: 675 , batch seconds: 1.8750622272491455
+Step: 676 , batch seconds: 1.9704279899597168
+Step: 677 , batch seconds: 1.9884788990020752
+Step: 678 , batch seconds: 1.9697363376617432
+Step: 679 , batch seconds: 1.9231412410736084
+Step: 680 , batch seconds: 1.9834239482879639
+Step: 681 , batch seconds: 1.9340264797210693
+Step: 682 , batch seconds: 1.8746631145477295
+Step: 683 , batch seconds: 1.9476597309112549
+Step: 684 , batch seconds: 2.0218007564544678
+Step: 685 , batch seconds: 1.945805311203003
+Step: 686 , batch seconds: 2.0566799640655518
+Step: 687 , batch seconds: 1.9119768142700195
+Step: 688 , batch seconds: 1.9598581790924072
+Step: 689 , batch seconds: 1.8920657634735107
+Step: 690 , batch seconds: 1.9953882694244385
+Step: 691 , batch seconds: 1.9432861804962158
+Step: 692 , batch seconds: 1.98543119430542
+Step: 693 , batch seconds: 1.919940710067749
+Step: 694 , batch seconds: 1.9395051002502441
+Step: 695 , batch seconds: 1.983959674835205
+Step: 696 , batch seconds: 2.012486219406128
+Step: 697 , batch seconds: 1.8332793712615967
+Step: 698 , batch seconds: 1.9930953979492188
+Step: 699 , batch seconds: 1.98020601272583
+Step: 700 , batch seconds: 1.9200947284698486
+Epoch 7/10000, steps = 700, train_cost = 53.898, train_ler = 0.000, val_cost = 53.649, val_ler = 0.933, time = 7.192s, learning_rate = 0.0010000000474974513
+Epoch....... 7
+Step: 701 , batch seconds: 1.8592374324798584
+Step: 702 , batch seconds: 1.9519600868225098
+Step: 703 , batch seconds: 2.0530245304107666
+Step: 704 , batch seconds: 1.9987995624542236
+Step: 705 , batch seconds: 1.9233500957489014
+Step: 706 , batch seconds: 1.917973279953003
+Step: 707 , batch seconds: 1.9629418849945068
+Step: 708 , batch seconds: 1.893376350402832
+Step: 709 , batch seconds: 1.9410350322723389
+Step: 710 , batch seconds: 1.966975450515747
+Step: 711 , batch seconds: 2.0383126735687256
+Step: 712 , batch seconds: 2.01181697845459
+Step: 713 , batch seconds: 1.9557178020477295
+Step: 714 , batch seconds: 1.9268834590911865
+Step: 715 , batch seconds: 1.8589742183685303
+Step: 716 , batch seconds: 1.9642212390899658
+Step: 717 , batch seconds: 2.014468193054199
+Step: 718 , batch seconds: 2.008629560470581
+Step: 719 , batch seconds: 2.0333359241485596
+Step: 720 , batch seconds: 1.9368836879730225
+Step: 721 , batch seconds: 1.9576787948608398
+Step: 722 , batch seconds: 1.9846839904785156
+Step: 723 , batch seconds: 1.860537052154541
+Step: 724 , batch seconds: 1.9832172393798828
+Step: 725 , batch seconds: 1.9662609100341797
+Step: 726 , batch seconds: 1.9815614223480225
+Step: 727 , batch seconds: 1.9240705966949463
+Step: 728 , batch seconds: 1.9328014850616455
+Step: 729 , batch seconds: 1.9953303337097168
+Step: 730 , batch seconds: 1.8385965824127197
+Step: 731 , batch seconds: 1.9763545989990234
+Step: 732 , batch seconds: 1.949965238571167
+Step: 733 , batch seconds: 1.9935026168823242
+Step: 734 , batch seconds: 1.898416519165039
+Step: 735 , batch seconds: 1.9374277591705322
+Step: 736 , batch seconds: 1.9642531871795654
+Step: 737 , batch seconds: 1.8402471542358398
+Step: 738 , batch seconds: 1.9690585136413574
+Step: 739 , batch seconds: 1.9941365718841553
+Step: 740 , batch seconds: 1.9635655879974365
+Step: 741 , batch seconds: 1.8746883869171143
+Step: 742 , batch seconds: 1.9797508716583252
+Step: 743 , batch seconds: 2.0008606910705566
+Step: 744 , batch seconds: 1.9957561492919922
+Step: 745 , batch seconds: 1.8382658958435059
+Step: 746 , batch seconds: 1.9922807216644287
+Step: 747 , batch seconds: 1.9814043045043945
+Step: 748 , batch seconds: 1.8981730937957764
+Step: 749 , batch seconds: 1.9891471862792969
+Step: 750 , batch seconds: 1.9412169456481934
+Step: 751 , batch seconds: 1.9683353900909424
+Step: 752 , batch seconds: 1.864198923110962
+Step: 753 , batch seconds: 2.005833387374878
+Step: 754 , batch seconds: 1.8880400657653809
+Step: 755 , batch seconds: 1.9962892532348633
+Step: 756 , batch seconds: 1.9581682682037354
+Step: 757 , batch seconds: 1.9595818519592285
+Step: 758 , batch seconds: 1.9772398471832275
+Step: 759 , batch seconds: 1.9093763828277588
+Step: 760 , batch seconds: 1.9459114074707031
+Step: 761 , batch seconds: 1.9926767349243164
+Step: 762 , batch seconds: 1.945476770401001
+Step: 763 , batch seconds: 1.9470531940460205
+Step: 764 , batch seconds: 1.9790301322937012
+Step: 765 , batch seconds: 1.9575879573822021
+Step: 766 , batch seconds: 1.9760150909423828
+Step: 767 , batch seconds: 1.844186782836914
+Step: 768 , batch seconds: 1.9714586734771729
+Step: 769 , batch seconds: 1.8934667110443115
+Step: 770 , batch seconds: 1.9752719402313232
+Step: 771 , batch seconds: 1.957169771194458
+Step: 772 , batch seconds: 2.0202834606170654
+Step: 773 , batch seconds: 1.9571661949157715
+Step: 774 , batch seconds: 1.8496549129486084
+Step: 775 , batch seconds: 1.9947412014007568
+Step: 776 , batch seconds: 2.0093955993652344
+Step: 777 , batch seconds: 2.013007164001465
+Step: 778 , batch seconds: 1.8973639011383057
+Step: 779 , batch seconds: 1.9831337928771973
+Step: 780 , batch seconds: 1.9500603675842285
+Step: 781 , batch seconds: 1.865560531616211
+Step: 782 , batch seconds: 1.9658732414245605
+Step: 783 , batch seconds: 1.994933843612671
+Step: 784 , batch seconds: 1.9618396759033203
+Step: 785 , batch seconds: 1.9478158950805664
+Step: 786 , batch seconds: 1.9640250205993652
+Step: 787 , batch seconds: 1.9768311977386475
+Step: 788 , batch seconds: 1.9425883293151855
+Step: 789 , batch seconds: 1.8630168437957764
+Step: 790 , batch seconds: 1.9339804649353027
+Step: 791 , batch seconds: 1.9737591743469238
+Step: 792 , batch seconds: 1.8963541984558105
+Step: 793 , batch seconds: 1.9440505504608154
+Step: 794 , batch seconds: 1.94520902633667
+Step: 795 , batch seconds: 2.025073766708374
+Step: 796 , batch seconds: 1.8104279041290283
+Step: 797 , batch seconds: 1.9828500747680664
+Step: 798 , batch seconds: 1.9358203411102295
+Step: 799 , batch seconds: 1.938162088394165
+Step: 800 , batch seconds: 2.0127334594726562
+Epoch 8/10000, steps = 800, train_cost = 53.166, train_ler = 0.000, val_cost = 52.279, val_ler = 0.933, time = 6.774s, learning_rate = 0.0010000000474974513
+Epoch....... 8
+Step: 801 , batch seconds: 1.9358468055725098
+Step: 802 , batch seconds: 1.9418535232543945
+Step: 803 , batch seconds: 2.0018692016601562
+Step: 804 , batch seconds: 1.9965028762817383
+Step: 805 , batch seconds: 2.0072884559631348
+Step: 806 , batch seconds: 1.953601360321045
+Step: 807 , batch seconds: 1.9428653717041016
+Step: 808 , batch seconds: 1.8613545894622803
+Step: 809 , batch seconds: 1.960447072982788
+Step: 810 , batch seconds: 2.0012481212615967
+Step: 811 , batch seconds: 1.9806406497955322
+Step: 812 , batch seconds: 1.9537839889526367
+Step: 813 , batch seconds: 1.9184317588806152
+Step: 814 , batch seconds: 1.973647117614746
+Step: 815 , batch seconds: 1.8657398223876953
+Step: 816 , batch seconds: 1.9524109363555908
+Step: 817 , batch seconds: 2.0354366302490234
+Step: 818 , batch seconds: 1.9968981742858887
+Step: 819 , batch seconds: 1.9605798721313477
+Step: 820 , batch seconds: 1.939836025238037
+Step: 821 , batch seconds: 1.9767661094665527
+Step: 822 , batch seconds: 1.8007843494415283
+Step: 823 , batch seconds: 2.0438036918640137
+Step: 824 , batch seconds: 1.9758076667785645
+Step: 825 , batch seconds: 1.9803102016448975
+Step: 826 , batch seconds: 1.9059910774230957
+Step: 827 , batch seconds: 1.962813377380371
+Step: 828 , batch seconds: 1.9612717628479004
+Step: 829 , batch seconds: 2.025663375854492
+Step: 830 , batch seconds: 1.8243827819824219
+Step: 831 , batch seconds: 1.9957587718963623
+Step: 832 , batch seconds: 2.0159144401550293
+Step: 833 , batch seconds: 1.9790258407592773
+Step: 834 , batch seconds: 1.8682947158813477
+Step: 835 , batch seconds: 1.9959361553192139
+Step: 836 , batch seconds: 1.91939377784729
+Step: 837 , batch seconds: 1.8335411548614502
+Step: 838 , batch seconds: 1.9768812656402588
+Step: 839 , batch seconds: 2.0166194438934326
+Step: 840 , batch seconds: 1.9083425998687744
+Step: 841 , batch seconds: 1.983097791671753
+Step: 842 , batch seconds: 1.9391520023345947
+Step: 843 , batch seconds: 1.972261905670166
+Step: 844 , batch seconds: 1.860060691833496
+Step: 845 , batch seconds: 1.9618632793426514
+Step: 846 , batch seconds: 1.945939302444458
+Step: 847 , batch seconds: 1.9492413997650146
+Step: 848 , batch seconds: 1.9603500366210938
+Step: 849 , batch seconds: 1.9437932968139648
+Step: 850 , batch seconds: 1.9677691459655762
+Step: 851 , batch seconds: 1.8462574481964111
+Step: 852 , batch seconds: 1.8144989013671875
+Step: 853 , batch seconds: 1.9712636470794678
+Step: 854 , batch seconds: 1.9626073837280273
+Step: 855 , batch seconds: 1.9401330947875977
+Step: 856 , batch seconds: 1.9243505001068115
+Step: 857 , batch seconds: 1.960374116897583
+Step: 858 , batch seconds: 1.9714758396148682
+Step: 859 , batch seconds: 1.8483030796051025
+Step: 860 , batch seconds: 1.9824223518371582
+Step: 861 , batch seconds: 2.001220464706421
+Step: 862 , batch seconds: 2.0157432556152344
+Step: 863 , batch seconds: 2.0200560092926025
+Step: 864 , batch seconds: 1.8999061584472656
+Step: 865 , batch seconds: 1.9636821746826172
+Step: 866 , batch seconds: 1.9612860679626465
+Step: 867 , batch seconds: 1.8702518939971924
+Step: 868 , batch seconds: 1.9720776081085205
+Step: 869 , batch seconds: 1.965285062789917
+Step: 870 , batch seconds: 1.8708558082580566
+Step: 871 , batch seconds: 1.9609551429748535
+Step: 872 , batch seconds: 1.962986946105957
+Step: 873 , batch seconds: 2.004481554031372
+Step: 874 , batch seconds: 1.8412485122680664
+Step: 875 , batch seconds: 2.000231981277466
+Step: 876 , batch seconds: 1.9661509990692139
+Step: 877 , batch seconds: 2.0033180713653564
+Step: 878 , batch seconds: 1.9417691230773926
+Step: 879 , batch seconds: 1.977379560470581
+Step: 880 , batch seconds: 2.00404953956604
+Step: 881 , batch seconds: 1.8375487327575684
+Step: 882 , batch seconds: 1.988497018814087
+Step: 883 , batch seconds: 1.9826877117156982
+Step: 884 , batch seconds: 1.991004467010498
+Step: 885 , batch seconds: 1.8900816440582275
+Step: 886 , batch seconds: 1.9992825984954834
+Step: 887 , batch seconds: 1.9563708305358887
+Step: 888 , batch seconds: 2.0123188495635986
+Step: 889 , batch seconds: 1.85978364944458
+Step: 890 , batch seconds: 1.993269443511963
+Step: 891 , batch seconds: 1.9421346187591553
+Step: 892 , batch seconds: 1.918297290802002
+Step: 893 , batch seconds: 1.9831352233886719
+Step: 894 , batch seconds: 1.96942138671875
+Step: 895 , batch seconds: 1.937225103378296
+Step: 896 , batch seconds: 1.8793213367462158
+Step: 897 , batch seconds: 2.0179007053375244
+Step: 898 , batch seconds: 1.8926753997802734
+Step: 899 , batch seconds: 1.9390296936035156
+Step: 900 , batch seconds: 1.9396014213562012
+Epoch 9/10000, steps = 900, train_cost = 51.777, train_ler = 0.000, val_cost = 50.860, val_ler = 0.915, time = 7.161s, learning_rate = 0.0010000000474974513
+Epoch....... 9
+Step: 901 , batch seconds: 1.9455490112304688
+Step: 902 , batch seconds: 1.959367275238037
+Step: 903 , batch seconds: 1.915334939956665
+Step: 904 , batch seconds: 1.946455478668213
+Step: 905 , batch seconds: 1.996716022491455
+Step: 906 , batch seconds: 1.9634931087493896
+Step: 907 , batch seconds: 1.8621115684509277
+Step: 908 , batch seconds: 1.9994614124298096
+Step: 909 , batch seconds: 1.980029582977295
+Step: 910 , batch seconds: 1.953627347946167
+Step: 911 , batch seconds: 1.924391746520996
+Step: 912 , batch seconds: 1.9955205917358398
+Step: 913 , batch seconds: 1.9477951526641846
+Step: 914 , batch seconds: 2.0163636207580566
+Step: 915 , batch seconds: 1.832308292388916
+Step: 916 , batch seconds: 1.9836750030517578
+Step: 917 , batch seconds: 1.98114013671875
+Step: 918 , batch seconds: 1.86100172996521
+Step: 919 , batch seconds: 2.017468214035034
+Step: 920 , batch seconds: 2.0007946491241455
+Step: 921 , batch seconds: 1.9594395160675049
+Step: 922 , batch seconds: 1.8184590339660645
+Step: 923 , batch seconds: 2.0017969608306885
+Step: 924 , batch seconds: 1.991227626800537
+Step: 925 , batch seconds: 1.9623515605926514
+Step: 926 , batch seconds: 1.953721046447754
+Step: 927 , batch seconds: 1.9838237762451172
+Step: 928 , batch seconds: 1.9632635116577148
+Step: 929 , batch seconds: 1.8428101539611816
+Step: 930 , batch seconds: 1.9666557312011719
+Step: 931 , batch seconds: 2.0256640911102295
+Step: 932 , batch seconds: 2.0063772201538086
+Step: 933 , batch seconds: 1.9905576705932617
+Step: 934 , batch seconds: 1.9802093505859375
+Step: 935 , batch seconds: 1.9646804332733154
+Step: 936 , batch seconds: 1.9859139919281006
+Step: 937 , batch seconds: 1.8716299533843994
+Step: 938 , batch seconds: 1.9375550746917725
+Step: 939 , batch seconds: 2.009962320327759
+Step: 940 , batch seconds: 1.9798643589019775
+Step: 941 , batch seconds: 1.934288501739502
+Step: 942 , batch seconds: 1.92030930519104
+Step: 943 , batch seconds: 2.0256474018096924
+Step: 944 , batch seconds: 1.8264408111572266
+Step: 945 , batch seconds: 1.977409839630127
+Step: 946 , batch seconds: 1.9747793674468994
+Step: 947 , batch seconds: 1.9686684608459473
+Step: 948 , batch seconds: 1.9327073097229004
+Step: 949 , batch seconds: 1.9498436450958252
+Step: 950 , batch seconds: 1.9759347438812256
+Step: 951 , batch seconds: 1.874342918395996
+Step: 952 , batch seconds: 1.9613029956817627
+Step: 953 , batch seconds: 1.9844098091125488
+Step: 954 , batch seconds: 1.9264147281646729
+Step: 955 , batch seconds: 1.9732167720794678
+Step: 956 , batch seconds: 2.015059232711792
+Step: 957 , batch seconds: 1.9948134422302246
+Step: 958 , batch seconds: 1.9720325469970703
+Step: 959 , batch seconds: 1.8267920017242432
+Step: 960 , batch seconds: 2.0243923664093018
+Step: 961 , batch seconds: 1.918670415878296
+Step: 962 , batch seconds: 1.9805550575256348
+Step: 963 , batch seconds: 1.9642534255981445
+Step: 964 , batch seconds: 1.964545726776123
+Step: 965 , batch seconds: 2.001197099685669
+Step: 966 , batch seconds: 1.8322553634643555
+Step: 967 , batch seconds: 1.9093303680419922
+Step: 968 , batch seconds: 1.9236993789672852
+Step: 969 , batch seconds: 1.951005220413208
+Step: 970 , batch seconds: 2.009822368621826
+Step: 971 , batch seconds: 1.9825000762939453
+Step: 972 , batch seconds: 1.9622538089752197
+Step: 973 , batch seconds: 1.937506914138794
+Step: 974 , batch seconds: 1.810434341430664
+Step: 975 , batch seconds: 1.9915311336517334
+Step: 976 , batch seconds: 1.9725215435028076
+Step: 977 , batch seconds: 1.9760944843292236
+Step: 978 , batch seconds: 1.8742682933807373
+Step: 979 , batch seconds: 1.9675087928771973
+Step: 980 , batch seconds: 1.9722607135772705
+Step: 981 , batch seconds: 1.817903995513916
+Step: 982 , batch seconds: 2.022592544555664
+Step: 983 , batch seconds: 1.999464750289917
+Step: 984 , batch seconds: 1.9935967922210693
+Step: 985 , batch seconds: 1.9855248928070068
+Step: 986 , batch seconds: 1.9194490909576416
+Step: 987 , batch seconds: 2.0055761337280273
+Step: 988 , batch seconds: 1.8850915431976318
+Step: 989 , batch seconds: 1.9539425373077393
+Step: 990 , batch seconds: 1.9457151889801025
+Step: 991 , batch seconds: 1.9597821235656738
+Step: 992 , batch seconds: 1.9305105209350586
+Step: 993 , batch seconds: 1.9733872413635254
+Step: 994 , batch seconds: 1.934610366821289
+Step: 995 , batch seconds: 2.0132675170898438
+Step: 996 , batch seconds: 1.8792128562927246
+Step: 997 , batch seconds: 1.9703645706176758
+Step: 998 , batch seconds: 2.0348002910614014
+Step: 999 , batch seconds: 1.9398880004882812
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1356, in _do_call
+    return fn(*args)
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1341, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1429, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: assertion failed: [Expected shape for Tensor rnn/sequence_length:0 is ] [500] [ but saw shape: ] [1000]
+	 [[{{node rnn/Assert/Assert}}]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "lstm_and_ctc_ocr_train.py", line 134, in <module>
+    train()
+  File "lstm_and_ctc_ocr_train.py", line 115, in train
+    c, steps = do_batch()
+  File "lstm_and_ctc_ocr_train.py", line 91, in do_batch
+    do_report()
+  File "lstm_and_ctc_ocr_train.py", line 83, in do_report
+    dd, log_probs, accuracy = session.run([decoded[0], log_prob, acc], test_feed)
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 950, in run
+    run_metadata_ptr)
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1173, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1350, in _do_run
+    run_metadata)
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1370, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: assertion failed: [Expected shape for Tensor rnn/sequence_length:0 is ] [500] [ but saw shape: ] [1000]
+	 [[node rnn/Assert/Assert (defined at /home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/model.py:106) ]]
+
+Original stack trace for 'rnn/Assert/Assert':
+  File "lstm_and_ctc_ocr_train.py", line 134, in <module>
+    train()
+  File "lstm_and_ctc_ocr_train.py", line 61, in train
+    logits, inputs, targets, seq_len, W, b = model.get_train_model()
+  File "/home/ubuntu/shopx2/tensorflow_lstm_ctc_ocr/model.py", line 106, in get_train_model
+    outputs, _ = tf.nn.dynamic_rnn(stack, features, seq_len, dtype=tf.float32)
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py", line 324, in new_func
+    return func(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py", line 694, in dynamic_rnn
+    [_assert_has_shape(sequence_length, [batch_size])]):
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py", line 688, in _assert_has_shape
+    " but saw shape: ", x_shape
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py", line 193, in wrapped
+    return _add_should_use_warning(fn(*args, **kwargs))
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/ops/control_flow_ops.py", line 163, in Assert
+    return gen_logging_ops._assert(condition, data, summarize, name="Assert")
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/ops/gen_logging_ops.py", line 74, in _assert
+    name=name)
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 788, in _apply_op_helper
+    op_def=op_def)
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3616, in create_op
+    op_def=op_def)
+  File "/home/ubuntu/anaconda3/envs/image_processing_projects/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 2005, in __init__
+    self._traceback = tf_stack.extract_stack()
+
